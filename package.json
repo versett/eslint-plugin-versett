@@ -1,0 +1,35 @@
+{
+  "name": "eslint-plugin-versett",
+  "version": "0.0.0-semantically-released",
+  "description": "A tool for linting projects with different techs",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "versett-devtools precommit",
+    "preparecommitmsg": "versett-devtools preparecommitmsg ${GIT_PARAMS}",
+    "release": "yarn && versett-devtools release",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/versett/eslint-plugin-versett.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/versett/eslint-plugin-versett/issues"
+  },
+  "homepage": "https://github.com/versett/eslint-plugin-versett#readme",
+  "devDependencies": {
+    "@versett/versett-devtools": "^1.9.0"
+  },
+  "lint-staged": {
+    "*.{js,json,css}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "release": {
+    "getLastRelease": "last-release-git"
+  },
+  "dependencies": {}
+}
