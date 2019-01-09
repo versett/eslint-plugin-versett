@@ -11,8 +11,8 @@ assignees: ''
 A detailed explanation of the issue or feature.
 
 **Requirements / AC:**
-[] - First requirement
-[] - Second requirement
+- [ ] First requirement
+- [ ] Second requirement
 
 **Related Issues:**
 Please note related issued here. Delete if not applicable.
