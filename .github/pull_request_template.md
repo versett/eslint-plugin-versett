@@ -8,10 +8,6 @@ add a few sentences to describe your PR. Add a testing guide to PR reviewer if n
 
 add a list of related PRs. Delete if not applicable
 
-**Visual reference**
-
-add visual references here if the PR changes UI. Delete if not applicable
-
 **Additional changes**
 
 if your PR affects areas outside of those described in the original issue, list them here
