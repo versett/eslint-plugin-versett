@@ -3,7 +3,7 @@
 module.exports = {
   rules: {
     // require braces around arrow function bodies
-    "	arrow-body-style": 0,
+    "arrow-body-style": 0,
     // require parentheses around arrow function arguments
     "arrow-parens": 0,
     // enforce consistent spacing before and after the arrow in arrow functions
