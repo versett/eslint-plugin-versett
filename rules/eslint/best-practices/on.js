@@ -2,134 +2,151 @@
 
 module.exports = {
   rules: {
-    // Enforces getter/setter pairs in objects
+    // enforce getter and setter pairs in objects
     "accessor-pairs": 0,
-    // enforce return statements in callbacks of array’s methods
+    // enforce return statements in callbacks of array methods
     "array-callback-return": 0,
-    // treat var statements as if they were block scoped
+    // enforce the use of variables within the scope they are defined
     "block-scoped-var": 0,
-    // specify the maximum cyclomatic complexity allowed in a program
+    // enforce that class methods utilize this
+    "class-methods-use-this": 0,
+    // enforce a maximum cyclomatic complexity allowed in a program
     complexity: 0,
     // require return statements to either always or never specify values
     "consistent-return": 0,
-    // specify curly brace conventions for multi-line control statements
+    // enforce consistent brace style for all control statements
     curly: 0,
-    // require default case in switch statements
+    // require default cases in switch statements
     "default-case": 0,
-    // enforces consistent newlines before dots
+    // enforce consistent newlines before and after dots
     "dot-location": 0,
-    // encourages use of dot notation whenever possible
+    // enforce dot notation whenever possible
     "dot-notation": 0,
     // require the use of === and !==
     eqeqeq: 0,
-    // make sure for-in loops have an if statement
+    // require for-in loops to include an if statement
     "guard-for-in": 0,
+    // enforce a maximum number of classes per file
+    "max-classes-per-file": 0,
     // disallow the use of alert, confirm, and prompt
     "no-alert": 0,
-    // disallow use of arguments.caller or arguments.callee
+    // disallow the use of arguments.caller or arguments.callee
     "no-caller": 0,
     // disallow lexical declarations in case clauses
     "no-case-declarations": 0,
-    // disallow division operators explicitly at beginning of regular expression
+    // disallow division operators explicitly at the beginning of regular expressions
     "no-div-regex": 0,
-    // disallow else after a return in an if
+    // disallow else blocks after return statements in if statements
     "no-else-return": 0,
-    // disallow use of empty functions
+    // disallow empty functions
     "no-empty-function": 0,
-    // disallow use of empty destructuring patterns
+    // disallow empty destructuring patterns
     "no-empty-pattern": 0,
-    // disallow comparisons to null without a type-checking operator
+    // disallow null comparisons without type-checking operators
     "no-eq-null": 0,
     // disallow use of eval()
     "no-eval": 0,
-    // disallow adding to native types
+    // disallow extending native types
     "no-extend-native": 0,
-    // disallow unnecessary function binding
+    // disallow unnecessary calls to .bind()
     "no-extra-bind": 0,
     // disallow unnecessary labels
     "no-extra-label": 0,
     // disallow fallthrough of case statements
     "no-fallthrough": 0,
-    // disallow the use of leading or trailing decimal points in numeric literals
+    // disallow leading or trailing decimal points in numeric literals
     "no-floating-decimal": 0,
-    // disallow the type conversions with shorter notations
+    // disallow assignments to native objects or read-only global variables
+    "no-global-assign": 0,
+    // disallow shorthand type conversions
     "no-implicit-coercion": 0,
-    // disallow var and named functions in global scope
+    // disallow variable and function declarations in the global scope
     "no-implicit-globals": 0,
-    // disallow use of eval()-like methods
+    // disallow the use of eval()-like methods
     "no-implied-eval": 0,
     // disallow this keywords outside of classes or class-like objects
     "no-invalid-this": 0,
     // disallow usage of __iterator__ property
     "no-iterator": 0,
-    // disallow use of labeled statements
+    // disallow labeled statements
     "no-labels": 0,
     // disallow unnecessary nested blocks
     "no-lone-blocks": 0,
-    // disallow creation of functions within loops
+    // disallow function declarations and expressions inside loop statements
     "no-loop-func": 0,
-    // disallow the use of magic numbers
+    // disallow magic numbers
     "no-magic-numbers": 0,
-    // disallow use of multiple spaces
+    // disallow multiple spaces
     "no-multi-spaces": 0,
-    // disallow use of multiline strings
+    // disallow multiline strings
     "no-multi-str": 0,
-    // disallow reassignments of native objects
-    "no-native-reassign": 0,
-    // disallow use of new operator when not part of the assignment or comparison
+    // disallow new operators outside of assignments or comparisons
     "no-new": 0,
-    // disallow use of new operator for Function object
+    // disallow new operators with the Function object
     "no-new-func": 0,
-    // disallows creating new instances of String,Number, and Boolean
+    // disallow new operators with the String, Number, and Boolean objects
     "no-new-wrappers": 0,
-    // disallow use of (old style) octal literals
+    // disallow octal literals
     "no-octal": 0,
-    // disallow use of octal escape sequences in string literals, such as
-    // var foo = "Copyright \051";
+    // disallow octal escape sequences in string literals
     "no-octal-escape": 0,
-    // disallow reassignment of function parameters
+    // disallow reassigning function parameters
     "no-param-reassign": 0,
-    // disallow usage of __proto__ property
+    // disallow the use of the __proto__ property
     "no-proto": 0,
-    // disallow declaring the same variable more then once
+    // disallow variable redeclaration
     "no-redeclare": 0,
-    // disallow use of assignment in return statement
+    // disallow certain properties on certain objects
+    "no-restricted-properties": 0,
+    // disallow assignment operators in return statements
     "no-return-assign": 0,
-    // disallow use of `javascript:` urls.
+    //disallow unnecessary return await
+    "no-return-await": 0,
+    // disallow javascript: urls
     "no-script-url": 0,
     // disallow assignments where both sides are exactly the same
     "no-self-assign": 0,
     // disallow comparisons where both sides are exactly the same
     "no-self-compare": 0,
-    // disallow use of comma operator
+    // disallow comma operators
     "no-sequences": 0,
-    // restrict what can be thrown as an exception
+    // disallow throwing literals as exceptions
     "no-throw-literal": 0,
-    // disallow unmodified conditions of loops
+    // disallow unmodified loop conditions
     "no-unmodified-loop-condition": 0,
-    // disallow usage of expressions in statement position
+    // disallow unused expressions
     "no-unused-expressions": 0,
     // disallow unused labels
     "no-unused-labels": 0,
-    // disallow unnecessary .call() and .apply()
+    // disallow unnecessary calls to .call() and .apply()
     "no-useless-call": 0,
+    // disallow unnecessary catch clauses
+    "no-useless-catch": 0,
     // disallow unnecessary concatenation of literals or template literals
     "no-useless-concat": 0,
-    // disallow unnecessary usage of escape character
+    // disallow redundant return statements
+    "no-useless-return": 0,
+    // disallow unnecessary escape characters
     "no-useless-escape": 0,
-    // disallow use of void operator
+    // disallow void operators
     "no-void": 0,
-    // disallow usage of configurable warning terms in comments: e.g. todo
+    // disallow specified warning terms in comments
     "no-warning-comments": 0,
-    // disallow use of the with statement
+    // disallow with statements
     "no-with": 0,
-    // require use of the second argument for parseInt()
+    // require using Error objects as Promise rejection reasons
+    "prefer-promise-reject-errors": 0,
+    // enforce the consistent use of the radix argument when using parseInt()
     radix: 0,
-    // requires to declare all vars on top of their containing scope
+    // disallow async functions which have no await expression
+    "require-await": 0,
+    // enforce the use of u flag on RegExp
+    "require-unicode-regexp": 0,
+    // require var declarations be placed at the top of their containing scope
     "vars-on-top": 0,
-    // require immediate function invocation to be wrapped in parentheses
+    // require parentheses around immediate function invocations
     "wrap-iife": 0,
-    // require or disallow Yoda conditions
+    // require or disallow “Yoda” conditions
     yoda: 0
   }
 };

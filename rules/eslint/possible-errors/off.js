@@ -2,8 +2,10 @@
 
 module.exports = {
   rules: {
-    // Enforce “for” loop update clause moving the counter in the right direction
+    // enforce “for” loop update clause moving the counter in the right direction
     "for-direction": 0,
+    // enforce return statements in getters
+    "getter-return": 0,
     // disallow using an async function as a Promise executor
     "no-async-promise-executor": 0,
     // disallow comparing against -0
@@ -14,13 +16,15 @@ module.exports = {
     "no-console": 0,
     // disallow constant expressions in conditions
     "no-constant-condition": 0,
+    // disallow control characters in regular expressions
+    "no-control-regex": 0,
     // disallow the use of debugger
     "no-debugger": 0,
     // disallow duplicate arguments in function definitions
     "no-dupe-args": 0,
     // disallow duplicate keys in object literals
     "no-dupe-keys": 0,
-    // Rule to disallow a duplicate case label
+    // rule to disallow a duplicate case label
     "no-duplicate-case": 0,
     // disallow empty block statements
     "no-empty": 0,
@@ -40,23 +44,29 @@ module.exports = {
     "no-inner-declarations": 0,
     // disallow invalid regular expression strings in RegExp constructors
     "no-invalid-regexp": 0,
-    // Disallow characters which are made with multiple code points in character class syntax
+    // disallow irregular whitespace
+    "no-irregular-whitespace": 0,
+    // disallow characters which are made with multiple code points in character class syntax
     "no-misleading-character-class": 0,
     // disallow calling global object properties as functions
     "no-obj-calls": 0,
-    // Disallow use of Object.prototypes builtins directly
+    // disallow use of Object.prototypes builtins directly
     "no-prototype-builtins": 0,
     // disallow multiple spaces in regular expression literals
     "no-regex-spaces": 0,
     // disallow sparse arrays
     "no-sparse-arrays": 0,
-    // Disallow template literal placeholder syntax in regular strings
+    // disallow template literal placeholder syntax in regular strings
     "no-template-curly-in-string": 0,
     // disallow confusing multiline expressions
     "no-unexpected-multiline": 0,
     // disallow unreachable code after return, throw, continue, and break statements
     "no-unreachable": 0,
-    // Disallow assignments that can lead to race conditions due to usage of await or yield
+    // disallow control flow statements in finally blocks
+    "no-unsafe-finally": 0,
+    // disallow negating the left operand of relational operators
+    "no-unsafe-negation": 0,
+    // disallow assignments that can lead to race conditions due to usage of await or yield
     "require-atomic-updates": 0,
     // require calls to isNaN() when checking for NaN
     "use-isnan": 0,

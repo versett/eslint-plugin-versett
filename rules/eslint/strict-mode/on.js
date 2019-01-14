@@ -2,7 +2,7 @@
 
 module.exports = {
   rules: {
-    // require that all functions are run in strict mode
+    // require or disallow strict mode directives
     strict: 0
   }
 };
