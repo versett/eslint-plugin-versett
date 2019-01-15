@@ -1,6 +1,7 @@
 "use strict";
 
 module.exports = {
+  plugins: ["react"],
   rules: {
     // Enforces consistent naming for boolean props
     "react/boolean-prop-naming": 0,
