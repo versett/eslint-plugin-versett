@@ -13,7 +13,7 @@ module.exports = {
     // enforce consistent brace style for blocks
     "brace-style": 0,
     // enforce camelcase naming convention
-    camelcase: 0,
+    "camelcase": 0,
     // enforce or disallow capitalization of the first letter of a comment
     "capitalized-comments": 0,
     // require or disallow trailing commas
@@ -47,7 +47,7 @@ module.exports = {
     // enforce the location of arrow function bodies
     "implicit-arrow-linebreak": 0,
     // enforce consistent indentation
-    indent: 0,
+    "indent": 0,
     // enforce the consistent use of either double or single quotes in JSX attributes
     "jsx-quotes": 0,
     // enforce consistent spacing between keys and values in object literal properties
@@ -153,9 +153,9 @@ module.exports = {
     // require quotes around object literal property names
     "quote-props": 0,
     // enforce the consistent use of either backticks, double, or single quotes
-    quotes: 0,
+    "quotes": 0,
     // require or disallow semicolons instead of ASI
-    semi: 0,
+    "semi": 0,
     // enforce consistent spacing before and after semicolons
     "semi-spacing": 0,
     // enforce location of semicolons
