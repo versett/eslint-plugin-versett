@@ -13,6 +13,9 @@ module.exports = {
     es6: true,
     jest: true
   },
+  ecmaFeatures: {
+    jsx: true
+  },
   parserOptions: {
     ecmaVersion: 6,
     sourceType: "module"

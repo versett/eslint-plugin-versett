@@ -10,11 +10,12 @@ module.exports = {
     "plugin:jsx-a11y/recommended"
   ],
   env: {
-    es6: true,
     jest: true
   },
+  ecmaFeatures: {
+    jsx: true
+  },
   parserOptions: {
-    ecmaVersion: 6,
     sourceType: "module"
   },
   settings: {
