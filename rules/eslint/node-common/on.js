@@ -5,7 +5,7 @@ module.exports = {
     // require return statements after callbacks
     "callback-return": 0,
     // require require() calls to be placed at top-level module scope
-    "global-require": 0,
+    "global-require": 2,
     // require error handling in callbacks
     "handle-callback-err": 0,
     // disallow use of the Buffer() constructor
