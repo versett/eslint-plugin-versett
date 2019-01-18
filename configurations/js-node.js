@@ -3,7 +3,12 @@
 module.exports = {
   parser: "babel-eslint",
   plugins: ["import"],
-  extends: ["versett/configurations/eslint-all", "versett/rules/jest/on"],
+  extends: [
+    require.resolve("../configurations/eslint-all"),
+    require.resolve("../rules/jest/on"),
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
   env: {
     es6: true,
     jest: true,

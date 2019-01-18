@@ -1,19 +1,18 @@
 "use strict";
 
 module.exports = {
-  parser: "babel-eslint",
+  parser: "typescript-eslint-parser",
   plugins: ["jsx-a11y", "import"],
   extends: [
-    "versett/configurations/eslint-all",
-    "versett/rules/jest/on",
-    "versett/rules/react/on",
-    "plugin:jsx-a11y/recommended"
+    require.resolve("../configurations/eslint-all"),
+    require.resolve("../rules/react/on"),
+    require.resolve("../rules/jest/on"),
+    "plugin:jsx-a11y/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
   ],
   env: {
     jest: true
-  },
-  ecmaFeatures: {
-    jsx: true
   },
   parserOptions: {
     sourceType: "module"
