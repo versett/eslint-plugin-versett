@@ -1,66 +1,87 @@
 # eslint-plugin-versett
 
-This is a plugin for versett
+This is an eslint plugin to be used in our projects. The configs will help us maintain our code base to be cleaner and consistent among different projects.
+Please read the guidlines below for both usage and development.
 
-## Getting Started
+## Usage
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Each config file helps you start linting a project by just using the preconfigured configurations. Currently there are 4 types of configurations available as below:
+* `jsNode` - for Node project using ES6 js
+* `jsReact` - for React project using ES6 js
+* `tsNode` - for Node project using Typescript
+* `tsReact` - for Node project using Typescript
+
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+For using one of these configurations you have to add this repository to your `package.json` file which you can do by running the following command:
+```
+yarn add --dev @versett/eslint-plugin-versett
+or
+npm install --save-dev @versett/eslint-plugin-versett
+```
+In order for this command to work you have to login to Versett organization on npm.
+
+
+### Configuration
+Eslint works with a config file which you can obtain more info from [here](https://eslint.org/docs/user-guide/configuring).
+In order to setup your project you should create a `.eslintrc.json` file or any other acceptable config file for eslint. but here we use the json format. Here is a confing file:
 
 ```
-Give examples
+{
+  "plugins": [
+    "versett"
+  ],
+  "extends": [
+    "plugin:versett/jsReact"
+  ],
+  "rules": {}
+}
+```
+In `plugins` you can add the plugins you want to use. by default we use these plugins in our configurations:
+
+* eslint
+* react
+* jest
+* jsx-a11y
+* import
+
+by using this syntax in `extends` you can import the configuration you need.
+```
+plugin:versett/configurationName
 ```
 
-### Installing
+In `rules` section you can override rules and turn them on or off or add new rules from new plugins to activate them. If you want to use additional plugins you have to add them in `plugins` but have to activate their rules.
 
-A step by step series of examples that tell you how to get a development env running
+### Typescript specific instructions
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
+Linting commands in package.json need to be a little different for Typescript so the code works:
+by using babel-eslint-typescript the same result can be reached with Typescript.
 
 ```
-until finished
+"lint": "eslint --ext .ts --ext .tsx src"
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+## Development
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
+To get started on develpment run these commands:
 ```
-Give an example
+$ nvm install
+$ nvm use
+$ yarn
 ```
-
-### And coding style tests
-
-Explain what these tests test and why
-
+For testing purposes you can use `yarn link` or `npm link`:
 ```
-Give an example
+$ cd plugin
+$ yarn link
+```
+then
+```
+$ cd project
+$ yarn link eslint-plugin-versett
 ```
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+After that, a symbolic link has been added to `node_modules` of the plugin directory that with every change can be tested.
 
 ## Contributing
 
@@ -68,21 +89,21 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+Versioning is done automatically by `versett-devtools` when a branch is merged with master and our CI/CD runs. 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Soroush Karimi**
+* **Mehran Dabestani**
+* **Hanie Gharedaghi**
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/versett/elsint-plugin-versett/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+UNLICENSED
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Thanks to all Versett superheroes!
 
