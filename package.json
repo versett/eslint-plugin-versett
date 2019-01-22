@@ -6,7 +6,7 @@
   "scripts": {
     "precommit": "versett-devtools precommit",
     "preparecommitmsg": "versett-devtools preparecommitmsg ${GIT_PARAMS}",
-    "release": "yarn && versett-devtools release",
+    "release": "yarn && versett-devtools release --npm-publish",
     "test": "jest",
     "test:ci": "jest"
   },
