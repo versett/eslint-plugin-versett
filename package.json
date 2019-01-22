@@ -6,8 +6,9 @@
   "scripts": {
     "precommit": "versett-devtools precommit",
     "preparecommitmsg": "versett-devtools preparecommitmsg ${GIT_PARAMS}",
-    "release": "yarn && versett-devtools release",
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "release": "yarn && versett-devtools release --npm-publish",
+    "test": "jest",
+    "test:ci": "jest"
   },
   "engines": {
     "node": ">=10.15.0",
@@ -25,7 +26,8 @@
   },
   "homepage": "https://github.com/versett/eslint-plugin-versett#readme",
   "devDependencies": {
-    "@versett/versett-devtools": "^1.9.0"
+    "@versett/versett-devtools": "^1.9.0",
+    "jest": "^23.6.0"
   },
   "lint-staged": {
     "*.{js,json,css}": [
