@@ -10,11 +10,6 @@
     "test": "jest",
     "test:ci": "jest"
   },
-  "engines": {
-    "node": ">=10.15.0",
-    "npm": ">=6.5.0",
-    "yarn": ">=1.13.0"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/versett/eslint-plugin-versett.git"
