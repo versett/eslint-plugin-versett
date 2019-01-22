@@ -12,7 +12,7 @@ Each config file helps you start linting a project by just using the preconfigur
 * `jsNode` - for Node project using ES6 js
 * `jsReact` - for React project using ES6 js
 * `tsNode` - for Node project using Typescript
-* `tsReact` - for Node project using Typescript
+* `tsReact` - for React project using Typescript
 
 
 ### Installation
@@ -33,11 +33,16 @@ In order to setup your project you should create a `.eslintrc.json` file or any 
 ```
 {
   "plugins": [
-    "versett"
+    "@versett/eslint-plugin-versett"
   ],
   "extends": [
-    "plugin:versett/jsReact"
+    "plugin:@versett/eslint-plugin-versett/jsReact"
   ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
   "rules": {}
 }
 ```
@@ -69,19 +74,18 @@ By using `babel-eslint-typescript` the same result can be reached with Typescrip
 
 To get started on develpment run these commands:
 ```
-$ nvm install
 $ nvm use
 $ yarn
 ```
 For testing purposes you can use `yarn link` or `npm link`:
 ```
-$ cd plugin
+$ cd eslint-plugin-versett
 $ yarn link
 ```
 then
 ```
 $ cd project
-$ yarn link eslint-plugin-versett
+$ yarn link @versett/eslint-plugin-versett
 ```
 
 After that, a symbolic link is added to `node_modules` of the plugin directory.
