@@ -1,7 +1,8 @@
 # eslint-plugin-versett
 
-This is an eslint plugin to be used in our projects. The configs will help us maintain our code base to be cleaner and consistent among different projects.
+This plugin will help us maintain our code base to be cleaner and consistent among different projects.
 Please read the guidlines below for both usage and development.
+You can find more info on eslint [here](https://eslint.org/).
 
 ## Usage
 
@@ -12,7 +13,7 @@ Each config file helps you start linting a project by just using the preconfigur
 * `tsReact` - for Node project using Typescript
 
 
-### Prerequisites
+### Installation
 
 For using one of these configurations you have to add this repository to your `package.json` file which you can do by running the following command:
 ```
@@ -51,12 +52,12 @@ by using this syntax in `extends` you can import the configuration you need.
 plugin:versett/configurationName
 ```
 
-In `rules` section you can override rules and turn them on or off or add new rules from new plugins to activate them. If you want to use additional plugins you have to add them in `plugins` but have to activate their rules.
+In `rules` section you can override rules and turn them on or off or add new rules from new plugins to activate them. If you want to use additional plugins you have to add them in `plugins` but have to activate their rules manually.
 
 ### Typescript specific instructions
 
-Linting commands in package.json need to be a little different for Typescript so the code works:
-by using babel-eslint-typescript the same result can be reached with Typescript.
+In order to to work with Typescript, Linting commands in `package.json` need to be a little different.
+By using `babel-eslint-typescript` the same result can be reached with Typescript.
 
 ```
 "lint": "eslint --ext .ts --ext .tsx src"
@@ -81,15 +82,26 @@ $ cd project
 $ yarn link eslint-plugin-versett
 ```
 
-After that, a symbolic link has been added to `node_modules` of the plugin directory that with every change can be tested.
+After that, a symbolic link is added to `node_modules` of the plugin directory.
+
+### Dependencies
+
+There are multiple eslint plugins we have used which are listed below.
+
+* [react](https://github.com/yannickcr/eslint-plugin-react)
+* [jest](https://github.com/jest-community/eslint-plugin-jest)
+* [import](https://github.com/benmosher/eslint-plugin-import/)
+* [jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y)
+
+please refer to their repos for rules and configurations.
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read `CONTRIBUTING.md` for details on our code of conduct, and the process for submitting pull requests.
 
 ## Versioning
 
-Versioning is done automatically by `versett-devtools` when a branch is merged with master and our CI/CD runs. 
+Versioning is done automatically by `versett-devtools` when a branch is merged with master and our CI/CD runs.
 
 ## Authors
 
@@ -97,7 +109,7 @@ Versioning is done automatically by `versett-devtools` when a branch is merged w
 * **Mehran Dabestani**
 * **Hanie Gharedaghi**
 
-See also the list of [contributors](https://github.com/versett/elsint-plugin-versett/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/versett/eslint-plugin-versett/contributors) who participated in this project.
 
 ## License
 
@@ -106,4 +118,3 @@ UNLICENSED
 ## Acknowledgments
 
 * Thanks to all Versett superheroes!
-
