@@ -144,7 +144,7 @@ module.exports = {
     // enforce curly braces or disallow unnecessary curly braces in JSX
     "react/jsx-curly-brace-presence": 0,
     // enforce shorthand or standard form for React fragments
-    "react/jsx-fragments": [2, "element"],
+    "react/jsx-fragments": [2, "syntax"],
     // enforce PascalCase for user-defined JSX components
     "react/jsx-pascal-case": 2,
     // disallow multiple spaces between inline JSX props (fixable)
