@@ -1,5 +1,7 @@
 # eslint-plugin-versett
 
+[![Build Status](https://travis-ci.com/versett/eslint-plugin-versett.svg?token=RyZnHpAxmkfPjEq48bkB&branch=master)](https://travis-ci.com/versett/eslint-plugin-versett)
+
 This plugin will help us maintain our code base to be cleaner and consistent among different projects.
 Please read the guidlines below for both usage and development.
 You can find more info on eslint [here](https://eslint.org/).
