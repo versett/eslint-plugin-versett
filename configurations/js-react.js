@@ -11,12 +11,12 @@ module.exports = {
     "plugin:import/errors",
     "plugin:import/warnings"
   ],
-  globals: {
-    global: true
-  },
   env: {
     es6: true,
     jest: true
+  },
+  globals: {
+    global: true
   },
   overrides: [
     {
