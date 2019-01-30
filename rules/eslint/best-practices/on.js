@@ -15,11 +15,11 @@ module.exports = {
     // require return statements to either always or never specify values
     "consistent-return": 0,
     // enforce consistent brace style for all control statements
-    "curly": 2,
+    "curly": 0,
     // require default cases in switch statements
     "default-case": 1,
     // enforce consistent newlines before and after dots
-    "dot-location": 2,
+    "dot-location": 0,
     // enforce dot notation whenever possible
     "dot-notation": 2,
     // require the use of === and !==
