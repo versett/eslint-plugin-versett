@@ -11,19 +11,19 @@ module.exports = {
     // enforce that class methods utilize this
     "class-methods-use-this": 0,
     // enforce a maximum cyclomatic complexity allowed in a program
-    "complexity": 0,
+    complexity: 0,
     // require return statements to either always or never specify values
     "consistent-return": 0,
     // enforce consistent brace style for all control statements
-    "curly": 2,
+    curly: 0,
     // require default cases in switch statements
     "default-case": 1,
     // enforce consistent newlines before and after dots
-    "dot-location": 2,
+    "dot-location": 0,
     // enforce dot notation whenever possible
     "dot-notation": 2,
     // require the use of === and !==
-    "eqeqeq": 2,
+    eqeqeq: 2,
     // require for-in loops to include an if statement
     "guard-for-in": 0,
     // enforce a maximum number of classes per file
@@ -75,7 +75,7 @@ module.exports = {
     // disallow function declarations and expressions inside loop statements
     "no-loop-func": 0,
     // disallow magic numbers
-    "no-magic-numbers": 1,
+    "no-magic-numbers": 2,
     // disallow multiple spaces
     "no-multi-spaces": 2,
     // disallow multiline strings
@@ -137,7 +137,7 @@ module.exports = {
     // require using Error objects as Promise rejection reasons
     "prefer-promise-reject-errors": 0,
     // enforce the consistent use of the radix argument when using parseInt()
-    "radix": 2,
+    radix: 2,
     // disallow async functions which have no await expression
     "require-await": 0,
     // enforce the use of u flag on RegExp
@@ -147,6 +147,6 @@ module.exports = {
     // require parentheses around immediate function invocations
     "wrap-iife": 0,
     // require or disallow “Yoda” conditions
-    "yoda": 2
+    yoda: 2
   }
 };
