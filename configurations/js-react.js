@@ -15,6 +15,17 @@ module.exports = {
     es6: true,
     jest: true
   },
+  globals: {
+    global: true,
+    process: true,
+    document: true,
+    window: true,
+    setTimeout: true,
+    setInterval: true,
+    clearTimeout: true,
+    clearInterval: true,
+    navigator: true
+  },
   parserOptions: {
     ecmaVersion: 6,
     sourceType: "module"

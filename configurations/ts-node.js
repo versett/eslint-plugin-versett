@@ -13,6 +13,14 @@ module.exports = {
     jest: true,
     node: true
   },
+  globals: {
+    global: true,
+    process: true,
+    setTimeout: true,
+    setInterval: true,
+    clearTimeout: true,
+    clearInterval: true
+  },
   parserOptions: {
     sourceType: "module"
   },

@@ -14,6 +14,17 @@ module.exports = {
   env: {
     jest: true
   },
+  globals: {
+    global: true,
+    process: true,
+    document: true,
+    window: true,
+    setTimeout: true,
+    setInterval: true,
+    clearTimeout: true,
+    clearInterval: true,
+    navigator: true
+  },
   parserOptions: {
     sourceType: "module"
   },
