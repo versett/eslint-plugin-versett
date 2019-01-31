@@ -16,7 +16,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ["*.spec.js"],
+      files: ["*.spec.js", "*.spec.ts", "*.spec.tsx"],
       rules: {
         "no-magic-numbers": 0
       },
