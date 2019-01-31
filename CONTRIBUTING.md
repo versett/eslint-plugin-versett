@@ -47,7 +47,7 @@ In each pull request at least one commit message must follow this convention for
 
 which category must be one of the following:
 
-* bug
+* fix
 * feat
 * hot
 
