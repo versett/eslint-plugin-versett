@@ -26,6 +26,13 @@ npm install --save-dev @versett/eslint-plugin-versett
 In order for this command to work you have to login to Versett organization on npm.
 
 
+####Peer Dependecies
+You have to install peer dependencies directly in your project for now by this command:
+```
+yarn add --dev eslint babel-eslint eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-import
+```
+This command will no longer be needed after the issue with `eslint shareable config plugins` is resolved.(You can refer to this [RFC](https://github.com/eslint/rfcs/pull/7) for more information) 
+
 ### Configuration
 Eslint works with a config file which you can obtain more info from [here](https://eslint.org/docs/user-guide/configuring).
 In order to setup your project you should create a `.eslintrc.json` file or any other acceptable config file for eslint. but here we use the json format. Here is a confing file:
@@ -49,7 +56,6 @@ In order to setup your project you should create a `.eslintrc.json` file or any 
 In `plugins` you can add the plugins you want to use. by default we use these plugins in our configurations:
 
 * eslint
-* react
 * jest
 * jsx-a11y
 * import
@@ -59,7 +65,8 @@ by using this syntax in `extends` you can import the configuration you need.
 plugin:versett/configurationName
 ```
 
-In `rules` section you can override rules and turn them on or off or add new rules from new plugins to activate them. If you want to use additional plugins you have to add them in `plugins` but have to activate their rules manually.
+In `rules` section, overriding them is advised against. But for overriding some of the rules, you can create an issue and see if the team agrees on the change.
+If you want to use additional plugins you have to add them in `plugins` but have to activate their rules manually.
 
 ### Typescript specific instructions
 
@@ -103,7 +110,7 @@ please refer to their repos for rules and configurations.
 
 ## Contributing
 
-Please read `CONTRIBUTING.md` for details on our code of conduct, and the process for submitting pull requests.
+Please read [this doc](https://versett.quip.com/zyEcAZ0ZosJn/How-to-Contribute-Code) for details on our code of conduct, and the process for submitting pull requests.
 
 ## Versioning
 
