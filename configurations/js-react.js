@@ -37,5 +37,7 @@ module.exports = {
       }
     }
   },
-  rules: {}
+  rules: {
+    "jsx-a11y/label-has-for": 0
+  }
 };
