@@ -160,7 +160,7 @@ module.exports = {
     // prevent React to be incorrectly marked as unused
     "react/jsx-uses-react": 2,
     // prevent variables used in JSX to be incorrectly marked as unused
-    "react/jsx-uses-vars": 0,
+    "react/jsx-uses-vars": 2,
     // prevent missing parentheses around multilines JSX (fixable)
     "react/jsx-wrap-multilines": 0
   }
