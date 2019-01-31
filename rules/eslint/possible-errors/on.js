@@ -41,7 +41,7 @@ module.exports = {
     // disallow reassigning function declarations
     "no-func-assign": 2,
     // disallow variable or function declarations in nested blocks
-    "no-inner-declarations": 1,
+    "no-inner-declarations": 0,
     // disallow invalid regular expression strings in RegExp constructors
     "no-invalid-regexp": 2,
     // disallow irregular whitespace
