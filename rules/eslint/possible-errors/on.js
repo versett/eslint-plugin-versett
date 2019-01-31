@@ -5,7 +5,7 @@ module.exports = {
     // enforce “for” loop update clause moving the counter in the right direction
     "for-direction": 2,
     // enforce return statements in getters
-    "getter-return": [2, { "allowImplicit": true }],
+    "getter-return": [2, { allowImplicit: true }],
     // disallow using an async function as a Promise executor
     "no-async-promise-executor": 0,
     // disallow comparing against -0
@@ -15,7 +15,7 @@ module.exports = {
     // disallow the use of console
     "no-console": 2,
     // disallow constant expressions in conditions
-    "no-constant-condition": [2, { "checkLoops": false }],
+    "no-constant-condition": [2, { checkLoops: false }],
     // disallow control characters in regular expressions
     "no-control-regex": 2,
     // disallow the use of debugger
@@ -27,7 +27,7 @@ module.exports = {
     // rule to disallow a duplicate case label
     "no-duplicate-case": 2,
     // disallow empty block statements
-    "no-empty": [2, { "allowEmptyCatch": true }],
+    "no-empty": [2, { allowEmptyCatch: true }],
     // disallow empty character classes in regular expressions
     "no-empty-character-class": 2,
     // disallow reassigning exceptions in catch clauses
@@ -51,7 +51,7 @@ module.exports = {
     // disallow calling global object properties as functions
     "no-obj-calls": 2,
     // disallow use of Object.prototypes builtins directly
-    "no-prototype-builtins": 2,
+    "no-prototype-builtins": 0,
     // disallow multiple spaces in regular expression literals
     "no-regex-spaces": 2,
     // disallow sparse arrays
