@@ -1,6 +1,7 @@
 "use strict";
 
 module.exports = {
+  plugins: ["import"],
   rules: {
     // require braces around arrow function bodies
     "arrow-body-style": 0,
@@ -21,7 +22,7 @@ module.exports = {
     // disallow duplicate class members
     "no-dupe-class-members": 0,
     // disallow duplicate module imports
-    "no-duplicate-imports": 0,
+    "import/no-duplicates": 0,
     // disallow new operators with the Symbol object
     "no-new-symbol": 0,
     // disallow specified modules when loaded by import
