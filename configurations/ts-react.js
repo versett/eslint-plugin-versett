@@ -9,7 +9,8 @@ module.exports = {
     require.resolve("../rules/jest/on"),
     "plugin:jsx-a11y/recommended",
     "plugin:import/errors",
-    "plugin:import/warnings"
+    "plugin:import/warnings",
+    "plugin:import/typescript"
   ],
   env: {
     jest: true

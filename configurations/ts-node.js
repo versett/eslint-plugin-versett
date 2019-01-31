@@ -7,7 +7,8 @@ module.exports = {
     require.resolve("../configurations/eslint-all"),
     require.resolve("../rules/jest/on"),
     "plugin:import/errors",
-    "plugin:import/warnings"
+    "plugin:import/warnings",
+    "plugin:import/typescript"
   ],
   env: {
     jest: true,
