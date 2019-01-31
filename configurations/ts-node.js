@@ -32,5 +32,8 @@ module.exports = {
       }
     }
   },
-  rules: {}
+  rules: {
+    "import/no-duplicates": 2,
+    "import/no-named-as-default": 2
+  }
 };

@@ -1,7 +1,6 @@
 "use strict";
 
 module.exports = {
-  plugins: ["import"],
   rules: {
     // require braces around arrow function bodies
     "arrow-body-style": 0,
@@ -21,8 +20,6 @@ module.exports = {
     "no-const-assign": 2,
     // disallow duplicate class members
     "no-dupe-class-members": 2,
-    // disallow duplicate module imports
-    "import/no-duplicates": 2,
     // disallow new operators with the Symbol object
     "no-new-symbol": 2,
     // disallow specified modules when loaded by import
@@ -40,7 +37,7 @@ module.exports = {
     // require or disallow method and property shorthand syntax for object literals
     "object-shorthand": 2,
     // require using arrow functions for callbacks
-    "prefer-arrow-callback": 1,
+    "prefer-arrow-callback": 2,
     // require const declarations for variables that are never reassigned after declared
     "prefer-const": 2,
     // require destructuring from arrays and/or objects

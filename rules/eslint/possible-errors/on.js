@@ -37,7 +37,7 @@ module.exports = {
     // disallow unnecessary parentheses
     "no-extra-parens": 0,
     // disallow unnecessary semicolons
-    "no-extra-semi": 1,
+    "no-extra-semi": 2,
     // disallow reassigning function declarations
     "no-func-assign": 2,
     // disallow variable or function declarations in nested blocks
@@ -45,7 +45,7 @@ module.exports = {
     // disallow invalid regular expression strings in RegExp constructors
     "no-invalid-regexp": 2,
     // disallow irregular whitespace
-    "no-irregular-whitespace": 1,
+    "no-irregular-whitespace": 2,
     // disallow characters which are made with multiple code points in character class syntax
     "no-misleading-character-class": 0,
     // disallow calling global object properties as functions
@@ -57,7 +57,7 @@ module.exports = {
     // disallow sparse arrays
     "no-sparse-arrays": 2,
     // disallow template literal placeholder syntax in regular strings
-    "no-template-curly-in-string": 1,
+    "no-template-curly-in-string": 2,
     // disallow confusing multiline expressions
     "no-unexpected-multiline": 2,
     // disallow unreachable code after return, throw, continue, and break statements
@@ -69,7 +69,7 @@ module.exports = {
     // disallow assignments that can lead to race conditions due to usage of await or yield
     "require-atomic-updates": 0,
     // require calls to isNaN() when checking for NaN
-    "use-isnan": 1,
+    "use-isnan": 2,
     // enforce comparing typeof expressions against valid strings
     "valid-typeof": 2
   }

@@ -38,6 +38,8 @@ module.exports = {
     }
   },
   rules: {
-    "jsx-a11y/label-has-for": 0
+    "jsx-a11y/label-has-for": 0,
+    "import/no-duplicates": 2,
+    "import/no-named-as-default": 2
   }
 };
