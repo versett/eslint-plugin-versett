@@ -30,7 +30,7 @@ module.exports = {
     // Disallow using f & x prefixes to define focused/skipped tests
     "jest/no-test-prefixes": 2,
     // Disallow explicitly returning from tests
-    "jest/no-test-return-statement": 2,
+    "jest/no-test-return-statement": 0,
     // Disallow using toBeTruthy() & toBeFalsy()
     "jest/no-truthy-falsy": 0,
     // Suggest using expect.assertions() OR expect.hasAssertions()
