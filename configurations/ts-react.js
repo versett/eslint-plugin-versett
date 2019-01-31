@@ -14,6 +14,9 @@ module.exports = {
   env: {
     jest: true
   },
+  globals: {
+    global: true
+  },
   overrides: [
     {
       files: ["*.spec.js", "*.spec.ts", "*.spec.tsx"],
