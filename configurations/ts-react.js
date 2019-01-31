@@ -14,6 +14,20 @@ module.exports = {
   env: {
     jest: true
   },
+  globals: {
+    global: true
+  },
+  overrides: [
+    {
+      files: ["*.spec.js", "*.spec.ts", "*.spec.tsx"],
+      rules: {
+        "no-magic-numbers": 0
+      },
+      env: {
+        jest: true
+      }
+    }
+  ],
   parserOptions: {
     sourceType: "module"
   },
