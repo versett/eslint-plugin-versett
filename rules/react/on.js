@@ -146,7 +146,7 @@ module.exports = {
     // enforce shorthand or standard form for React fragments
     "react/jsx-fragments": [2, "syntax"],
     // enforce PascalCase for user-defined JSX components
-    "react/jsx-pascal-case": 2,
+    "react/jsx-pascal-case": [2, { allowAllCaps: true }],
     // disallow multiple spaces between inline JSX props (fixable)
     "react/jsx-props-no-multi-spaces": 0,
     // enforce default props alphabetical sorting
