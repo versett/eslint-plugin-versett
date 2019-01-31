@@ -128,7 +128,7 @@ module.exports = {
     // limit maximum of props on a single line in JSX (fixable)
     "react/jsx-max-props-per-line": 0,
     // prevent usage of .bind() and arrow functions in JSX props
-    "react/jsx-no-bind": 2,
+    "react/jsx-no-bind": [2, { allowArrowFunctions: true }],
     // prevent comments from being inserted as text nodes
     "react/jsx-no-comment-textnodes": 2,
     // prevent duplicate props in JSX
