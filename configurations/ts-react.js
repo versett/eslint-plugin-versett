@@ -26,6 +26,17 @@ module.exports = {
     clearInterval: true,
     navigator: true
   },
+  overrides: [
+    {
+      files: ["*.spec.js", "*.spec.ts", "*.spec.tsx"],
+      rules: {
+        "no-magic-numbers": 0
+      },
+      env: {
+        jest: true
+      }
+    }
+  ],
   parserOptions: {
     sourceType: "module"
   },

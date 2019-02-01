@@ -15,11 +15,11 @@ module.exports = {
     // require return statements to either always or never specify values
     "consistent-return": 0,
     // enforce consistent brace style for all control statements
-    curly: 2,
+    curly: 0,
     // require default cases in switch statements
     "default-case": 0,
     // enforce consistent newlines before and after dots
-    "dot-location": 2,
+    "dot-location": 0,
     // enforce dot notation whenever possible
     "dot-notation": 2,
     // require the use of === and !==
@@ -75,7 +75,7 @@ module.exports = {
     // disallow function declarations and expressions inside loop statements
     "no-loop-func": 0,
     // disallow magic numbers
-    "no-magic-numbers": 1,
+    "no-magic-numbers": 2,
     // disallow multiple spaces
     "no-multi-spaces": 2,
     // disallow multiline strings

@@ -22,6 +22,17 @@ module.exports = {
     clearTimeout: true,
     clearInterval: true
   },
+  overrides: [
+    {
+      files: ["*.spec.js"],
+      rules: {
+        "no-magic-numbers": 0
+      },
+      env: {
+        jest: true
+      }
+    }
+  ],
   parserOptions: {
     ecmaVersion: 6,
     sourceType: "module"
