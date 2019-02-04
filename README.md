@@ -9,10 +9,10 @@ You can find more info on eslint [here](https://eslint.org/).
 ## Usage
 
 Each config file helps you start linting a project by just using the preconfigured configurations. Currently there are 4 types of configurations available as below:
-* `jsNode` - for Node project using ES6 js
-* `jsReact` - for React project using ES6 js
-* `tsNode` - for Node project using Typescript
-* `tsReact` - for React project using Typescript
+* `jsNode` - for Node projects using Javascript
+* `jsReact` - for React projects using Javascript
+* `tsNode` - for Node projects using Typescript
+* `tsReact` - for React projects using Typescript
 
 
 ### Installation
@@ -20,10 +20,12 @@ Each config file helps you start linting a project by just using the preconfigur
 For using one of these configurations you have to add this repository to your `package.json` file which you can do by running the following command:
 ```
 yarn add --dev @versett/eslint-plugin-versett
+```
 or
+```
 npm install --save-dev @versett/eslint-plugin-versett
 ```
-In order for this command to work you have to login to Versett organization on npm.
+In order for this command to work you have to login to Versett organization on npm using `npm login`.
 
 
 ####Peer Dependecies
@@ -34,8 +36,9 @@ yarn add --dev eslint babel-eslint eslint-plugin-jest eslint-plugin-jsx-a11y esl
 This command will no longer be needed after the issue with `eslint shareable config plugins` is resolved.(You can refer to this [RFC](https://github.com/eslint/rfcs/pull/7) for more information) 
 
 ### Configuration
-Eslint works with a config file which you can obtain more info from [here](https://eslint.org/docs/user-guide/configuring).
-In order to setup your project you should create a `.eslintrc.json` file or any other acceptable config file for eslint. but here we use the json format. Here is a confing file:
+
+Eslint works with [a config file](https://eslint.org/docs/user-guide/configuring).
+Here is a sample config file (`.eslintrc.json`):
 
 ```
 {
@@ -71,31 +74,31 @@ If you want to use additional plugins you have to add them in `plugins` but have
 ### Typescript specific instructions
 
 In order to to work with Typescript, Linting commands in `package.json` need to be a little different.
-By using `babel-eslint-typescript` the same result can be reached with Typescript.
+By using `babel-eslint-typescript` the same result can be achieved with Typescript.
 
 ```
-"lint": "eslint --ext .ts --ext .tsx src"
+"lint": "eslint --ext .ts,.tsx src"
 ```
 
 ## Development
 
 To get started on develpment run these commands:
 ```
-$ nvm use
-$ yarn
+nvm use
+yarn
 ```
-For testing purposes you can use `yarn link` or `npm link`:
+For testing purposes you can use `yarn link` (or `npm link`):
 ```
-$ cd eslint-plugin-versett
-$ yarn link
+cd eslint-plugin-versett
+yarn link
 ```
 then
 ```
-$ cd project
-$ yarn link @versett/eslint-plugin-versett
+cd my-project
+yarn link @versett/eslint-plugin-versett
 ```
 
-After that, a symbolic link is added to `node_modules` of the plugin directory.
+After that, a symbolic link is added to `node_modules` of the project directory.
 
 ### Dependencies
 
@@ -116,6 +119,10 @@ Please read [this doc](https://versett.quip.com/zyEcAZ0ZosJn/How-to-Contribute-C
 
 Versioning is done automatically by `versett-devtools` when a branch is merged with master and our CI/CD runs.
 
+## Need help?
+
+Post on the #developers channel on Slack or create an issue.
+
 ## Authors
 
 * **Soroush Karimi**
@@ -123,10 +130,6 @@ Versioning is done automatically by `versett-devtools` when a branch is merged w
 * **Hanie Gharedaghi**
 
 See also the list of [contributors](https://github.com/versett/eslint-plugin-versett/contributors) who participated in this project.
-
-## License
-
-UNLICENSED
 
 ## Acknowledgments
 
