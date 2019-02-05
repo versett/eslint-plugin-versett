@@ -3,13 +3,14 @@
 module.exports = {
   parser: "babel-eslint",
   plugins: ["jsx-a11y", "import"],
+  //our custome config must have a higher priority to other config, so change the order of extended configs with caution
   extends: [
-    require.resolve("../configurations/eslint-all"),
-    require.resolve("../rules/react/on"),
-    require.resolve("../rules/jest/on"),
     "plugin:jsx-a11y/recommended",
     "plugin:import/errors",
-    "plugin:import/warnings"
+    "plugin:import/warnings",
+    require.resolve("../configurations/eslint-all"),
+    require.resolve("../rules/react/on"),
+    require.resolve("../rules/jest/on")
   ],
   env: {
     es6: true,
@@ -48,10 +49,5 @@ module.exports = {
       }
     }
   },
-  rules: {
-    "jsx-a11y/label-has-for": 0,
-    "import/no-duplicates": 2,
-    "import/no-named-as-default": 2,
-    "import/namespace": 0
-  }
+  rules: {}
 };

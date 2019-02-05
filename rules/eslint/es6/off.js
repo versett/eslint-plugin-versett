@@ -1,6 +1,7 @@
 "use strict";
 
 module.exports = {
+  plugins: ["import"],
   rules: {
     // require braces around arrow function bodies
     "arrow-body-style": 0,
@@ -64,6 +65,12 @@ module.exports = {
     "yield-star-spacing": 0,
     // disallow duplicate module imports
     // since it does not work nicely with flow types, its replaced with import/no-duplicates
-    "no-duplicate-imports": 0
+    "no-duplicate-imports": 0,
+    // report repeated import of the same module in multiple places
+    "import/no-duplicates": 0,
+    // report use of exported name as identifier of default export
+    "import/no-named-as-default": 0,
+    // ensure imported namespaces contain dereferenced properties as they are dereferenced
+    "import/namespace": 0
   }
 };

@@ -163,7 +163,9 @@ module.exports = {
     "react/jsx-uses-vars": 2,
     // prevent missing parentheses around multilines JSX (fixable)
     "react/jsx-wrap-multilines": 0,
-    //enforce that a label tag has a text label and an associated control.
-    "jsx-a11y/label-has-associated-control": 2
+    // enforce that a label tag has a text label and an associated control.
+    "jsx-a11y/label-has-associated-control": 2,
+    // enforce label tags have associated control
+    "jsx-a11y/label-has-for": 0
   }
 };

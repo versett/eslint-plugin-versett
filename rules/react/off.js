@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = {
-  plugins: ["react"],
+  plugins: ["react", "jsx-a11y"],
   rules: {
     // Enforces consistent naming for boolean props
     "react/boolean-prop-naming": 0,
@@ -161,6 +161,8 @@ module.exports = {
     // Prevent variables used in JSX to be incorrectly marked as unused
     "react/jsx-uses-vars": 0,
     // Prevent missing parentheses around multilines JSX (fixable)
-    "react/jsx-wrap-multilines": 0
+    "react/jsx-wrap-multilines": 0,
+    // Enforce label tags have associated control
+    "jsx-a11y/label-has-for": 0
   }
 };
