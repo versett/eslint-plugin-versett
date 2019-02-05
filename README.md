@@ -9,15 +9,14 @@ You can find more info on eslint [here](https://eslint.org/).
 ## Usage
 
 Each config file helps you start linting a project by just using the preconfigured configurations. Currently there are 4 types of configurations available as below:
-* `jsNode` - for Node projects using Javascript
-* `jsReact` - for React projects using Javascript
-* `tsNode` - for Node projects using Typescript
-* `tsReact` - for React projects using Typescript
+* `plugin:@versett/eslint-plugin-versett/jsNode` - for Node projects using Javascript
+* `plugin:@versett/eslint-plugin-versett/jsReact` - for React projects using Javascript
+* `plugin:@versett/eslint-plugin-versett/tsNode` - for Node projects using Typescript
+* `plugin:@versett/eslint-plugin-versett/tsReact` - for React projects using Typescript
 
 
 ### Installation
 
-For using one of these configurations you have to add this repository to your `package.json` file which you can do by running the following command:
 ```
 yarn add --dev @versett/eslint-plugin-versett
 ```
@@ -25,15 +24,16 @@ or
 ```
 npm install --save-dev @versett/eslint-plugin-versett
 ```
-In order for this command to work you have to login to Versett organization on npm using `npm login`.
+You must be logged in to you Versett npm account first using `npm login`.
 
 
-####Peer Dependecies
-You have to install peer dependencies directly in your project for now by this command:
+#### Peer Dependecies
+
+You have to install the following peer dependencies directly in your project for now by this command:
 ```
 yarn add --dev eslint babel-eslint eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-import
 ```
-This command will no longer be needed after the issue with `eslint shareable config plugins` is resolved.(You can refer to this [RFC](https://github.com/eslint/rfcs/pull/7) for more information) 
+This command will no longer be needed after the issue with `eslint shareable config plugins` is resolved.(You can refer to this [RFC](https://github.com/eslint/rfcs/pull/7) for more information.
 
 ### Configuration
 
@@ -56,29 +56,21 @@ Here is a sample config file (`.eslintrc.json`):
   "rules": {}
 }
 ```
-In `plugins` you can add the plugins you want to use. by default we use these plugins in our configurations:
+For using this plugin with `react` projects you can use `@versett/eslint-plugin-versett/jsReact` config but you must install the following plugins first:
+* eslint-plugin-jsx-a11y
+* eslint-plugin-react
 
-* eslint
-* jest
-* jsx-a11y
-* import
+Also for `typescript` projects you can use `@versett/eslint-plugin-versett/tsNode` or `@versett/eslint-plugin-versett/tsReact` and you must install the following parser in addition to the previous plugins for `react`:
+* typescript-eslint-parser
 
-by using this syntax in `extends` you can import the configuration you need.
-```
-plugin:versett/configurationName
-```
+We strongly recommend against overriding the `rules` configured by this plugin. If you believe you have a good reason for overriding a rule, please create an issue on this repository and post it on the #developers channel on Slack. If the team agrees, we will change the rule in the plugin so all projects can benefit from it.
 
-In `rules` section, overriding them is advised against. But for overriding some of the rules, you can create an issue and see if the team agrees on the change.
-If you want to use additional plugins you have to add them in `plugins` but have to activate their rules manually.
+### Running
 
-### Typescript specific instructions
+Add the following script to your `package.json` and then run it using `yarn lint` (or `npm run lint`):
+``` "lint": "eslint src --ext .js,.ts,.tsx" ``` 
 
-In order to to work with Typescript, Linting commands in `package.json` need to be a little different.
-By using `babel-eslint-typescript` the same result can be achieved with Typescript.
-
-```
-"lint": "eslint --ext .ts,.tsx src"
-```
+(you can change the `--ext` flag to the file extensions you use in your project)
 
 ## Development
 
@@ -98,7 +90,7 @@ cd my-project
 yarn link @versett/eslint-plugin-versett
 ```
 
-After that, a symbolic link is added to `node_modules` of the project directory.
+After that, a symbolic link is added to `node_modules` of the plugin directory.
 
 ### Dependencies
 
