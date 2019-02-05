@@ -10,9 +10,23 @@ You can find more info on eslint [here](https://eslint.org/).
 
 Each config file helps you start linting a project by just using the preconfigured configurations. Currently there are 4 types of configurations available as below:
 * `plugin:@versett/eslint-plugin-versett/jsNode` - for Node projects using Javascript
-* `plugin:@versett/eslint-plugin-versett/jsReact` - for React projects using Javascript
+* `plugin:@versett/eslint-plugin-versett/jsReact` - for React 
+projects using Javascript
+  - Requires installing the following dependencies:
+  `yarn add --dev eslint-plugin-react eslint-plugin-jsx-a11y`
+  or
+  `npm install --save-dev eslint-plugin-react eslint-plugin-jsx-a11y`
 * `plugin:@versett/eslint-plugin-versett/tsNode` - for Node projects using Typescript
-* `plugin:@versett/eslint-plugin-versett/tsReact` - for React projects using Typescript
+  - Requires installing the following dependencies:
+  `yarn add --dev typescript-eslint-parser`
+  or
+  `npm install --save-dev typescript-eslint-parser`
+* `plugin:@versett/eslint-plugin-versett/tsReact` - for React projects using 
+Typescript
+  - Requires installing the following dependencies:
+  `yarn add --dev typescript-eslint-parser`
+  or
+  `npm install --save-dev typescript-eslint-parser`
 
 
 ### Installation
