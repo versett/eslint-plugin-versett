@@ -35,7 +35,7 @@ module.exports = {
     // prevent problem with children and props.dangerouslySetInnerHTML
     "react/no-danger-with-children": 2,
     // prevent usage of deprecated methods, including component lifecyle methods
-    "react/no-deprecated": 0,
+    "react/no-deprecated": 2,
     // prevent usage of setState in componentDidMount
     "react/no-did-mount-set-state": 2,
     // prevent usage of setState in componentDidUpdate
@@ -93,7 +93,7 @@ module.exports = {
     // enforce propTypes declarations alphabetical sorting
     "react/sort-prop-types": 0,
     // enforce style prop value being an object
-    "react/style-prop-object": 0,
+    "react/style-prop-object": 2,
     // prevent void DOM elements (e.g. <img />, <br />) from receiving children
     "react/void-dom-elements-no-children": 2,
 
