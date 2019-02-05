@@ -46,6 +46,7 @@ module.exports = {
   },
   rules: {
     "import/no-duplicates": 2,
-    "import/no-named-as-default": 2
+    "import/no-named-as-default": 2,
+    "import/namespace": 0
   }
 };
