@@ -15,7 +15,7 @@ module.exports = {
     // disallow reassigning class members
     "no-class-assign": 2,
     // disallow arrow functions where they could be confused with comparisons
-    "no-confusing-arrow": 2,
+    "no-confusing-arrow": 0,
     // disallow reassigning const variables
     "no-const-assign": 2,
     // disallow duplicate class members
