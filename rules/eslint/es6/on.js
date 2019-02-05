@@ -61,6 +61,9 @@ module.exports = {
     // require or disallow spacing around embedded expressions of template strings
     "template-curly-spacing": 0,
     // require or disallow spacing around the * in yield* expressions
-    "yield-star-spacing": 0
+    "yield-star-spacing": 0,
+    // disallow duplicate module imports
+    // since it does not work nicely with flow types, its replaced with import/no-duplicates
+    "no-duplicate-imports": 0
   }
 };
