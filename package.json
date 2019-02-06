@@ -8,7 +8,7 @@
     "preparecommitmsg": "versett-devtools preparecommitmsg ${GIT_PARAMS}",
     "release": "yarn && versett-devtools release --npm-publish",
     "test": "jest",
-    "test:ci": "jest"
+    "test:ci": "yarn check --integrity && jest"
   },
   "repository": {
     "type": "git",

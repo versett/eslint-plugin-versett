@@ -7,7 +7,7 @@ module.exports = {
     // require require() calls to be placed at top-level module scope
     "global-require": 2,
     // require error handling in callbacks
-    "handle-callback-err": 0,
+    "handle-callback-err": 2,
     // disallow use of the Buffer() constructor
     "no-buffer-constructor": 0,
     // disallow require calls to be mixed with regular variable declarations
@@ -15,7 +15,7 @@ module.exports = {
     // disallow new operators with calls to require
     "no-new-require": 0,
     // disallow string concatenation with __dirname and __filename
-    "no-path-concat": 0,
+    "no-path-concat": 2,
     // disallow the use of process.env
     "no-process-env": 0,
     // disallow the use of process.exit()
