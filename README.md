@@ -75,17 +75,18 @@ In order to to work with Typescript, Linting commands in `package.json` need to 
 By using `babel-eslint-typescript` the same result can be reached with Typescript.
 
 ```
+"lint": "eslint --ext .ts --ext .tsx src"
+```
+
+Also in eslintrc.json file the parser and parserOption properties must change to: 
+
+```
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "project": `path to tsconfig.json`
   }
 ```
 
-Also in eslintrc.json file the parser and parserOption properties must change to: 
-
-```
-"lint": "eslint --ext .ts --ext .tsx src"
-```
 
 ## Development
 
