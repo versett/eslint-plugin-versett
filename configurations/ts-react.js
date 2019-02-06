@@ -3,7 +3,7 @@
 module.exports = {
   parser: "typescript-eslint-parser",
   plugins: ["jsx-a11y", "import"],
-  //our custome config must have a higher priority to other config, so change the order of extended configs with caution
+  // our custome config must have a higher priority to other config, so change the order of extended configs with caution
   extends: [
     "plugin:jsx-a11y/recommended",
     "plugin:import/errors",

@@ -8,7 +8,8 @@ module.exports = {
     require.resolve("../rules/eslint/possible-errors/on"),
     require.resolve("../rules/eslint/strict-mode/on"),
     require.resolve("../rules/eslint/stylistic-issues/on"),
-    require.resolve("../rules/eslint/variables/on")
+    require.resolve("../rules/eslint/variables/on"),
+    require.resolve("../rules/eslint/import/on")
   ],
   parser: "babel-eslint",
   parserOptions: {
