@@ -1,11 +1,12 @@
 "use strict";
 
 module.exports = {
-  parser: "typescript-eslint-parser",
+  parser: "@typescript-eslint/parser",
   plugins: ["import"],
   extends: [
     require.resolve("../configurations/eslint-all"),
     require.resolve("../rules/jest/on"),
+    require.resolve("../rules/ts/on"),
     "plugin:import/errors",
     "plugin:import/warnings"
   ],
