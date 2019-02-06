@@ -35,7 +35,7 @@ module.exports = {
     // prevent problem with children and props.dangerouslySetInnerHTML
     "react/no-danger-with-children": 2,
     // prevent usage of deprecated methods, including component lifecyle methods
-    "react/no-deprecated": 0,
+    "react/no-deprecated": 2,
     // prevent usage of setState in componentDidMount
     "react/no-did-mount-set-state": 2,
     // prevent usage of setState in componentDidUpdate
@@ -93,7 +93,7 @@ module.exports = {
     // enforce propTypes declarations alphabetical sorting
     "react/sort-prop-types": 0,
     // enforce style prop value being an object
-    "react/style-prop-object": 0,
+    "react/style-prop-object": 2,
     // prevent void DOM elements (e.g. <img />, <br />) from receiving children
     "react/void-dom-elements-no-children": 2,
 
@@ -112,7 +112,10 @@ module.exports = {
     // enforce or disallow spaces around equal signs in JSX attributes (fixable)
     "react/jsx-equals-spacing": 0,
     // restrict file extensions that may contain JSX
-    "react/jsx-filename-extension": [2, { extensions: [".js", ".jsx"] }],
+    "react/jsx-filename-extension": [
+      2,
+      { extensions: [".js", ".jsx", ".ts", ".tsx"] }
+    ],
     // enforce position of the first prop in JSX (fixable)
     "react/jsx-first-prop-new-line": 0,
     // enforce event handler naming conventions in JSX
