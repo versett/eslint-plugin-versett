@@ -70,7 +70,7 @@ module.exports = {
     // Disallow the use of type aliases
     "@typescript-eslint/no-type-alias": 2,
     // Warns if a type assertion does not change the type of an expression
-    "@typescript-eslint/no-unnecessary-type-assertion": 0,
+    "@typescript-eslint/no-unnecessary-type-assertion": 2,
     // Disallow unused variables
     // this rules is covered by eslint
     "@typescript-eslint/no-unused-vars": 0,
@@ -87,7 +87,7 @@ module.exports = {
     // Require the use of the namespace keyword instead of the module keyword to declare custom TypeScript modules
     "@typescript-eslint/prefer-namespace-keyword": 2,
     // When adding two variables, operands must both be of type number or of type string
-    "@typescript-eslint/restrict-plus-operands": 0,
+    "@typescript-eslint/restrict-plus-operands": 2,
     // Require consistent spacing around type annotations
     "@typescript-eslint/type-annotation-spacing": 2
   }
