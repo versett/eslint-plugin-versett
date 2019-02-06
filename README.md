@@ -68,6 +68,11 @@ In addition to packages that are needed for javascript linting, the following pa
 * @typescript-eslint/eslint-plugin
 * @typescript-eslint/parser
 
+ `yarn add --dev @typescript-eslint/parser @typescript-eslint/eslint-plugin`
+or 
+`npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin`
+
+
 **It is important that you use the same version number for @typescript-eslint/parser and  @typescript-eslint/eslint-plugin**
 
 
