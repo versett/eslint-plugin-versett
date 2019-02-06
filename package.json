@@ -34,6 +34,8 @@
     "getLastRelease": "last-release-git"
   },
   "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.2.0",
+    "@typescript-eslint/parser": "^1.2.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.12.0",
     "eslint-plugin-import": "^2.14.0",
