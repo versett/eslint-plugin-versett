@@ -63,12 +63,12 @@ In `rules` section you can override rules and turn them on or off or add new rul
 
 ### Typescript specific instructions
 
-In addition to packages that are needed for javascript linting, the following packages must be added to consumers project's peer dependencies:
+In addition to packages that are needed for javascript linting, the following packages must be added to consumers project's devDependencies:
 
 * @typescript-eslint/eslint-plugin
 * @typescript-eslint/parser
 
- `yarn add --dev @typescript-eslint/parser @typescript-eslint/eslint-plugin`
+`yarn add --dev @typescript-eslint/parser @typescript-eslint/eslint-plugin`
 or 
 `npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin`
 
