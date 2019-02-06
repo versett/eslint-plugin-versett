@@ -47,7 +47,7 @@ You have to install the following peer dependencies directly in your project for
 ```
 yarn add --dev eslint babel-eslint eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-import
 ```
-This command will no longer be needed after the issue with `eslint shareable config plugins` is resolved.(You can refer to this [RFC](https://github.com/eslint/rfcs/pull/7) for more information.
+This command will no longer be needed after the issue with `eslint shareable config plugins` is resolved. You can refer to this [RFC](https://github.com/eslint/rfcs/pull/7) for more information.
 
 ### Configuration
 
