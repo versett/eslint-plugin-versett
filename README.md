@@ -12,7 +12,19 @@ Each config file helps you start linting a project by just using the preconfigur
 * `jsNode` - for Node project using ES6 js
 * `jsReact` - for React project using ES6 js
 * `tsNode` - for Node project using Typescript
+  * Requires installing the following dependencies:
+    `yarn add --dev @typescript-eslint/parser @typescript-eslint/eslint-plugin`
+    or
+    `npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin`
 * `tsReact` - for React project using Typescript
+  * Requires installing the following dependencies:
+    `yarn add --dev @typescript-eslint/parser @typescript-eslint/eslint-plugin`
+    or
+    `npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin`
+
+**It is important that you use the same version number for `@typescript-eslint/parser` and  `@typescript-eslint/eslint-plugin`**
+
+
 
 
 ### Installation
@@ -63,27 +75,7 @@ In `rules` section you can override rules and turn them on or off or add new rul
 
 ### Typescript specific instructions
 
-In addition to packages that are needed for javascript linting, the following packages must be added to consumers project's devDependencies:
-
-* @typescript-eslint/eslint-plugin
-* @typescript-eslint/parser
-
-`yarn add --dev @typescript-eslint/parser @typescript-eslint/eslint-plugin`
-or
-`npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin`
-
-
-**It is important that you use the same version number for @typescript-eslint/parser and  @typescript-eslint/eslint-plugin**
-
-
-In order to to work with Typescript, Linting commands in `package.json` need to be a little different.
-By using `babel-eslint-typescript` the same result can be reached with Typescript.
-
-```
-"lint": "eslint --ext .ts --ext .tsx src"
-```
-
-Also in eslintrc.json file the parser and parserOption properties must change to: 
+In `eslintrc.json` the parser and parserOption properties must change to: 
 
 ```
   "parser": "@typescript-eslint/parser",
