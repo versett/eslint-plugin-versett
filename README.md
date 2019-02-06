@@ -9,24 +9,24 @@ You can find more info on eslint [here](https://eslint.org/).
 ## Usage
 
 Each config file helps you start linting a project by just using the preconfigured configurations. Currently there are 4 types of configurations available as below:
-* `plugin:@versett/eslint-plugin-versett/jsNode` - for Node projects using Javascript
-* `plugin:@versett/eslint-plugin-versett/jsReact` - for React 
+* **`plugin:@versett/eslint-plugin-versett/jsNode`** - for Node projects using Javascript
+* **`plugin:@versett/eslint-plugin-versett/jsReact`** - for React 
 projects using Javascript
-  - Requires installing the following dependencies:
-  `yarn add --dev eslint-plugin-react eslint-plugin-jsx-a11y`
+  * Requires installing the following dependencies:
+    * `yarn add --dev eslint-plugin-react eslint-plugin-jsx-a11y`
   or
-  `npm install --save-dev eslint-plugin-react eslint-plugin-jsx-a11y`
-* `plugin:@versett/eslint-plugin-versett/tsNode` - for Node projects using Typescript
-  - Requires installing the following dependencies:
-  `yarn add --dev typescript-eslint-parser`
+    * `npm install --save-dev eslint-plugin-react eslint-plugin-jsx-a11y`
+* **`plugin:@versett/eslint-plugin-versett/tsNode`** - for Node projects using Typescript
+  * Requires installing the following dependencies:
+    * `yarn add --dev @typescript-eslint/parser @typescript-eslint/eslint-plugin`
   or
-  `npm install --save-dev typescript-eslint-parser`
-* `plugin:@versett/eslint-plugin-versett/tsReact` - for React projects using 
+    * `  npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin`
+* **`plugin:@versett/eslint-plugin-versett/tsReact`** - for React projects using 
 Typescript
   - Requires installing the following dependencies:
-  `yarn add --dev typescript-eslint-parser`
+    * `yarn add --dev @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-react eslint-plugin-jsx-a11y`
   or
-  `npm install --save-dev typescript-eslint-parser`
+    * `npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-react eslint-plugin-jsx-a11y`
 
 
 ### Installation
@@ -61,21 +61,9 @@ Here is a sample config file (`.eslintrc.json`):
   ],
   "extends": [
     "plugin:@versett/eslint-plugin-versett/jsReact"
-  ],
-  "parser": "babel-eslint",
-  "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "module"
-  },
-  "rules": {}
+  ]
 }
 ```
-For using this plugin with `react` projects you can use `@versett/eslint-plugin-versett/jsReact` config but you must install the following plugins first:
-* eslint-plugin-jsx-a11y
-* eslint-plugin-react
-
-Also for `typescript` projects you can use `@versett/eslint-plugin-versett/tsNode` or `@versett/eslint-plugin-versett/tsReact` and you must install the following parser in addition to the previous plugins for `react`:
-* typescript-eslint-parser
 
 We strongly recommend against overriding the `rules` configured by this plugin. If you believe you have a good reason for overriding a rule, please create an issue on this repository and post it on the #developers channel on Slack. If the team agrees, we will change the rule in the plugin so all projects can benefit from it.
 
@@ -104,7 +92,7 @@ cd my-project
 yarn link @versett/eslint-plugin-versett
 ```
 
-After that, a symbolic link is added to `node_modules` of the plugin directory.
+After that, a symbolic link is added to `node_modules` of the project directory.
 
 ### Dependencies
 
@@ -114,6 +102,8 @@ There are multiple eslint plugins we have used which are listed below.
 * [jest](https://github.com/jest-community/eslint-plugin-jest)
 * [import](https://github.com/benmosher/eslint-plugin-import/)
 * [jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y)
+* [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser)
+* [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)
 
 please refer to their repos for rules and configurations.
 
