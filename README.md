@@ -63,8 +63,25 @@ In `rules` section you can override rules and turn them on or off or add new rul
 
 ### Typescript specific instructions
 
+In addition to packages that are needed for javascript linting, the following packages must be added to consumers project's peer dependencies:
+
+* @typescript-eslint/eslint-plugin
+* @typescript-eslint/parser
+
+**It is important that you use the same version number for @typescript-eslint/parser and  @typescript-eslint/eslint-plugin**
+
+
 In order to to work with Typescript, Linting commands in `package.json` need to be a little different.
 By using `babel-eslint-typescript` the same result can be reached with Typescript.
+
+```
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": `path to tsconfig.json`
+  }
+```
+
+Also in eslintrc.json file the parser and parserOption properties must change to: 
 
 ```
 "lint": "eslint --ext .ts --ext .tsx src"
