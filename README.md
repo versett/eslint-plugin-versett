@@ -8,30 +8,6 @@ You can find more info on eslint [here](https://eslint.org/).
 
 ## Usage
 
-Each config file helps you start linting a project by just using the preconfigured configurations. Currently there are 4 types of configurations available as below:
-* **`plugin:@versett/eslint-plugin-versett/jsNode`** - for Node projects using Javascript
-* **`plugin:@versett/eslint-plugin-versett/jsReact`** - for React 
-projects using Javascript
-  * Requires installing the following dependencies:
-    * `yarn add --dev eslint-plugin-react eslint-plugin-jsx-a11y`
-  or
-    * `npm install --save-dev eslint-plugin-react eslint-plugin-jsx-a11y`
-* **`plugin:@versett/eslint-plugin-versett/tsNode`** - for Node projects using Typescript
-  * Requires installing the following dependencies:
-    * `yarn add --dev @typescript-eslint/parser @typescript-eslint/eslint-plugin`
-  or
-    * `  npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin`
-* **`plugin:@versett/eslint-plugin-versett/tsReact`** - for React projects using 
-Typescript
-  - Requires installing the following dependencies:
-    * `yarn add --dev @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-react eslint-plugin-jsx-a11y`
-  or
-    * `npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-react eslint-plugin-jsx-a11y`
-
-**It is important that you use the same version number for `@typescript-eslint/parser` and  `@typescript-eslint/eslint-plugin`**
-
-
-
 ### Installation
 
 ```
@@ -52,10 +28,31 @@ yarn add --dev eslint babel-eslint eslint-plugin-jest eslint-plugin-jsx-a11y esl
 ```
 This command will no longer be needed after the issue with `eslint shareable config plugins` is resolved. You can refer to this [RFC](https://github.com/eslint/rfcs/pull/7) for more information.
 
+##### React Project Peer Dependencies
+
+If you are using React, you need to install the following dependencies as well:  
+`yarn add --dev eslint-plugin-react eslint-plugin-jsx-a11y`  
+(or `npm install --save-dev eslint-plugin-react eslint-plugin-jsx-a11y`)
+
+##### Typescript Project Peer Dependencies
+
+If you are using Typescript, you need to install the following dependencies as well:  
+`yarn add --dev @typescript-eslint/parser @typescript-eslint/eslint-plugin`  
+(or `npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin`)  
+
+**Notes:** 
+- It is important that you use the same version number for `@typescript-eslint/parser` and  `@typescript-eslint/eslint-plugin`.
+- `tsconfig.json` must be in the root of the project.
+
 ### Configuration
 
-Eslint works with [a config file](https://eslint.org/docs/user-guide/configuring).
-Here is a sample config file (`.eslintrc.json`):
+Each Versett configuration helps you start linting a project by just using the preconfigured setup. Currently there are 4 types of configurations available as below:
+* **`plugin:@versett/eslint-plugin-versett/jsNode`** - for Node projects using Javascript
+* **`plugin:@versett/eslint-plugin-versett/jsReact`** - for React projects using Javascript
+* **`plugin:@versett/eslint-plugin-versett/tsNode`** - for Node projects using Typescript
+* **`plugin:@versett/eslint-plugin-versett/tsReact`** - for React projects using Typescript
+
+Here is a sample [Eslint config file](https://eslint.org/docs/user-guide/configuring) (`project-directory/.eslintrc.json`):
 
 ```
 {
@@ -72,20 +69,10 @@ We strongly recommend against overriding the `rules` configured by this plugin. 
 
 ### Running
 
-#### Typescipt
-
-For typescript projects the parser and parserOption properties in `eslintrc.json`  must change to: 
-
-```
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "project": `path to tsconfig.json`
-  }
-```
-
-#### package.json
-Add the following script to your `package.json` and then run it using `yarn lint` (or `npm run lint`):
-``` "lint": "eslint src --ext .js,.ts,.tsx" ``` 
+Add the following script to your `package.json` and then run it using `yarn lint` (or `npm run lint`):  
+```json
+"lint": "eslint src --ext .js,.tsx"
+```  
 
 (you can change the `--ext` flag to the file extensions you use in your project)
 
