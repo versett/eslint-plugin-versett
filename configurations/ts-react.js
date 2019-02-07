@@ -2,6 +2,9 @@
 
 module.exports = {
   parser: "@typescript-eslint/parser",
+  parserOptions: {
+    project: "./tsconfig.json"
+  },
   plugins: ["jsx-a11y", "import"],
   // our custome config must have a higher priority to other config, so change the order of extended configs with caution
   extends: [
