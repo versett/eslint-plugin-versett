@@ -5,7 +5,7 @@ module.exports = {
     // enforce “for” loop update clause moving the counter in the right direction
     "for-direction": 2,
     // enforce return statements in getters
-    "getter-return": [2, { "allowImplicit": true }],
+    "getter-return": [2, { allowImplicit: true }],
     // disallow using an async function as a Promise executor
     "no-async-promise-executor": 0,
     // disallow comparing against -0
@@ -15,7 +15,7 @@ module.exports = {
     // disallow the use of console
     "no-console": 2,
     // disallow constant expressions in conditions
-    "no-constant-condition": [2, { "checkLoops": false }],
+    "no-constant-condition": [2, { checkLoops: false }],
     // disallow control characters in regular expressions
     "no-control-regex": 2,
     // disallow the use of debugger
@@ -27,7 +27,7 @@ module.exports = {
     // rule to disallow a duplicate case label
     "no-duplicate-case": 2,
     // disallow empty block statements
-    "no-empty": [2, { "allowEmptyCatch": true }],
+    "no-empty": [2, { allowEmptyCatch: true }],
     // disallow empty character classes in regular expressions
     "no-empty-character-class": 2,
     // disallow reassigning exceptions in catch clauses
@@ -37,27 +37,27 @@ module.exports = {
     // disallow unnecessary parentheses
     "no-extra-parens": 0,
     // disallow unnecessary semicolons
-    "no-extra-semi": 1,
+    "no-extra-semi": 2,
     // disallow reassigning function declarations
     "no-func-assign": 2,
     // disallow variable or function declarations in nested blocks
-    "no-inner-declarations": 1,
+    "no-inner-declarations": 0,
     // disallow invalid regular expression strings in RegExp constructors
     "no-invalid-regexp": 2,
     // disallow irregular whitespace
-    "no-irregular-whitespace": 1,
+    "no-irregular-whitespace": 2,
     // disallow characters which are made with multiple code points in character class syntax
     "no-misleading-character-class": 0,
     // disallow calling global object properties as functions
     "no-obj-calls": 2,
     // disallow use of Object.prototypes builtins directly
-    "no-prototype-builtins": 2,
+    "no-prototype-builtins": 0,
     // disallow multiple spaces in regular expression literals
     "no-regex-spaces": 2,
     // disallow sparse arrays
     "no-sparse-arrays": 2,
     // disallow template literal placeholder syntax in regular strings
-    "no-template-curly-in-string": 1,
+    "no-template-curly-in-string": 2,
     // disallow confusing multiline expressions
     "no-unexpected-multiline": 2,
     // disallow unreachable code after return, throw, continue, and break statements
@@ -69,7 +69,7 @@ module.exports = {
     // disallow assignments that can lead to race conditions due to usage of await or yield
     "require-atomic-updates": 0,
     // require calls to isNaN() when checking for NaN
-    "use-isnan": 1,
+    "use-isnan": 2,
     // enforce comparing typeof expressions against valid strings
     "valid-typeof": 2
   }

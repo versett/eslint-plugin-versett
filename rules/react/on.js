@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = {
-  plugins: ["react"],
+  plugins: ["react", "jsx-a11y"],
   rules: {
     // enforces consistent naming for boolean props
     // it must start with "is" or "has" like "isEnabled" or "hasCondition"
@@ -131,7 +131,7 @@ module.exports = {
     // limit maximum of props on a single line in JSX (fixable)
     "react/jsx-max-props-per-line": 0,
     // prevent usage of .bind() and arrow functions in JSX props
-    "react/jsx-no-bind": 2,
+    "react/jsx-no-bind": [2, { allowArrowFunctions: true }],
     // prevent comments from being inserted as text nodes
     "react/jsx-no-comment-textnodes": 2,
     // prevent duplicate props in JSX
@@ -149,7 +149,7 @@ module.exports = {
     // enforce shorthand or standard form for React fragments
     "react/jsx-fragments": [2, "syntax"],
     // enforce PascalCase for user-defined JSX components
-    "react/jsx-pascal-case": 2,
+    "react/jsx-pascal-case": [2, { allowAllCaps: true }],
     // disallow multiple spaces between inline JSX props (fixable)
     "react/jsx-props-no-multi-spaces": 0,
     // enforce default props alphabetical sorting
@@ -163,8 +163,12 @@ module.exports = {
     // prevent React to be incorrectly marked as unused
     "react/jsx-uses-react": 2,
     // prevent variables used in JSX to be incorrectly marked as unused
-    "react/jsx-uses-vars": 0,
+    "react/jsx-uses-vars": 2,
     // prevent missing parentheses around multilines JSX (fixable)
-    "react/jsx-wrap-multilines": 0
+    "react/jsx-wrap-multilines": 0,
+    // enforce that a label tag has a text label and an associated control.
+    "jsx-a11y/label-has-associated-control": 2,
+    // enforce label tags have associated control
+    "jsx-a11y/label-has-for": 0
   }
 };
