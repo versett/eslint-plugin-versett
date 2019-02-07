@@ -8,14 +8,12 @@ module.exports = {
   plugins: ["import"],
   // our custome config must have a higher priority to other config, so change the order of extended configs with caution
   extends: [
-    require.resolve("../configurations/eslint-all"),
-    require.resolve("../rules/jest/on"),
-    require.resolve("../rules/ts/on"),
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
     require.resolve("../configurations/eslint-all"),
-    require.resolve("../rules/jest/on")
+    require.resolve("../rules/jest/on"),
+    require.resolve("../rules/ts/on")
   ],
   env: {
     jest: true,
