@@ -46,6 +46,9 @@ module.exports = {
       node: {
         extensions: [".ts", ".tsx"]
       }
+    },
+    react: {
+      version: "detect"
     }
   },
   rules: {}
