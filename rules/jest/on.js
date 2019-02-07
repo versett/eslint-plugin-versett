@@ -50,7 +50,7 @@ module.exports = {
     // Suggest using toMatchInlineSnapshot()
     "jest/prefer-inline-snapshots": 0,
     // Require that toThrow() and toThrowError includes a message
-    "jest/require-tothrow-message": 0,
+    "jest/require-tothrow-message": 2,
     // Enforce valid describe() callback
     "jest/valid-describe": 2,
     // Enforce having return statement when testing with promises
