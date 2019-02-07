@@ -21,7 +21,7 @@ module.exports = {
     // disallow the use of undefined as an identifier
     "no-undefined": 2,
     // disallow unused variables
-    "no-unused-vars": 2,
+    "no-unused-vars": [2, { ignoreRestSiblings: true }],
     // disallow the use of variables before they are defined
     "no-use-before-define": 0
   }

@@ -17,7 +17,7 @@ module.exports = {
     // enforce consistent brace style for all control statements
     curly: 0,
     // require default cases in switch statements
-    "default-case": 1,
+    "default-case": 0,
     // enforce consistent newlines before and after dots
     "dot-location": 0,
     // enforce dot notation whenever possible
@@ -87,7 +87,7 @@ module.exports = {
     // disallow new operators with the String, Number, and Boolean objects
     "no-new-wrappers": 2,
     // disallow octal literals
-    "no-octal": 1,
+    "no-octal": 2,
     // disallow octal escape sequences in string literals
     "no-octal-escape": 0,
     // disallow reassigning function parameters
