@@ -1,8 +1,7 @@
-"use strict";
+const rules = require("./on.js");
 
-module.exports = {
-  rules: {
-    // require or disallow strict mode directives
-    "strict": 0
-  }
-};
+Object.keys(rules).map(rule => {
+  rules[rule] = 0;
+});
+
+module.exports = rules;
