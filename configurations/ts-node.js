@@ -3,15 +3,25 @@
 module.exports = {
   parser: "typescript-eslint-parser",
   plugins: ["import"],
+  // our custome config must have a higher priority to other config, so change the order of extended configs with caution
   extends: [
-    require.resolve("../configurations/eslint-all"),
-    require.resolve("../rules/jest/on"),
     "plugin:import/errors",
-    "plugin:import/warnings"
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    require.resolve("../configurations/eslint-all"),
+    require.resolve("../rules/jest/on")
   ],
   env: {
     jest: true,
     node: true
+  },
+  globals: {
+    global: true,
+    process: true,
+    setTimeout: true,
+    setInterval: true,
+    clearTimeout: true,
+    clearInterval: true
   },
   overrides: [
     {

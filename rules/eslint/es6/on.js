@@ -15,13 +15,11 @@ module.exports = {
     // disallow reassigning class members
     "no-class-assign": 2,
     // disallow arrow functions where they could be confused with comparisons
-    "no-confusing-arrow": 2,
+    "no-confusing-arrow": 0,
     // disallow reassigning const variables
     "no-const-assign": 2,
     // disallow duplicate class members
     "no-dupe-class-members": 2,
-    // disallow duplicate module imports
-    "no-duplicate-imports": 2,
     // disallow new operators with the Symbol object
     "no-new-symbol": 2,
     // disallow specified modules when loaded by import
@@ -39,11 +37,11 @@ module.exports = {
     // require or disallow method and property shorthand syntax for object literals
     "object-shorthand": 2,
     // require using arrow functions for callbacks
-    "prefer-arrow-callback": 1,
+    "prefer-arrow-callback": 2,
     // require const declarations for variables that are never reassigned after declared
     "prefer-const": 2,
     // require destructuring from arrays and/or objects
-    "prefer-destructuring": 1,
+    "prefer-destructuring": 0,
     // disallow parseInt() and Number.parseInt() in favor of binary, octal, and hexadecimal literals
     "prefer-numeric-literals": 0,
     // require rest parameters instead of arguments
@@ -63,6 +61,9 @@ module.exports = {
     // require or disallow spacing around embedded expressions of template strings
     "template-curly-spacing": 0,
     // require or disallow spacing around the * in yield* expressions
-    "yield-star-spacing": 0
+    "yield-star-spacing": 0,
+    // disallow duplicate module imports
+    // since it does not work nicely with flow types, its replaced with import/no-duplicates
+    "no-duplicate-imports": 0
   }
 };

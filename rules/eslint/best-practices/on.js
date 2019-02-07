@@ -17,7 +17,7 @@ module.exports = {
     // enforce consistent brace style for all control statements
     curly: 0,
     // require default cases in switch statements
-    "default-case": 1,
+    "default-case": 0,
     // enforce consistent newlines before and after dots
     "dot-location": 0,
     // enforce dot notation whenever possible
@@ -45,9 +45,9 @@ module.exports = {
     // disallow null comparisons without type-checking operators
     "no-eq-null": 2,
     // disallow use of eval()
-    "no-eval": 0,
+    "no-eval": 2,
     // disallow extending native types
-    "no-extend-native": 0,
+    "no-extend-native": 2,
     // disallow unnecessary calls to .bind()
     "no-extra-bind": 2,
     // disallow unnecessary labels
@@ -57,23 +57,23 @@ module.exports = {
     // disallow leading or trailing decimal points in numeric literals
     "no-floating-decimal": 0,
     // disallow assignments to native objects or read-only global variables
-    "no-global-assign": 0,
+    "no-global-assign": 2,
     // disallow shorthand type conversions
     "no-implicit-coercion": 0,
     // disallow variable and function declarations in the global scope
     "no-implicit-globals": 0,
     // disallow the use of eval()-like methods
-    "no-implied-eval": 0,
+    "no-implied-eval": 2,
     // disallow this keywords outside of classes or class-like objects
-    "no-invalid-this": 0,
+    "no-invalid-this": 2,
     // disallow usage of __iterator__ property
-    "no-iterator": 0,
+    "no-iterator": 2,
     // disallow labeled statements
     "no-labels": 0,
     // disallow unnecessary nested blocks
-    "no-lone-blocks": 0,
+    "no-lone-blocks": 2,
     // disallow function declarations and expressions inside loop statements
-    "no-loop-func": 0,
+    "no-loop-func": 2,
     // disallow magic numbers
     "no-magic-numbers": 2,
     // disallow multiple spaces
@@ -87,13 +87,13 @@ module.exports = {
     // disallow new operators with the String, Number, and Boolean objects
     "no-new-wrappers": 2,
     // disallow octal literals
-    "no-octal": 1,
+    "no-octal": 2,
     // disallow octal escape sequences in string literals
     "no-octal-escape": 0,
     // disallow reassigning function parameters
     "no-param-reassign": 2,
     // disallow the use of the __proto__ property
-    "no-proto": 0,
+    "no-proto": 2,
     // disallow variable redeclaration
     "no-redeclare": 2,
     // disallow certain properties on certain objects
@@ -101,15 +101,15 @@ module.exports = {
     // disallow assignment operators in return statements
     "no-return-assign": 2,
     //disallow unnecessary return await
-    "no-return-await": 0,
+    "no-return-await": 2,
     // disallow javascript: urls
-    "no-script-url": 0,
+    "no-script-url": 2,
     // disallow assignments where both sides are exactly the same
     "no-self-assign": 2,
     // disallow comparisons where both sides are exactly the same
     "no-self-compare": 2,
     // disallow comma operators
-    "no-sequences": 0,
+    "no-sequences": 2,
     // disallow throwing literals as exceptions
     "no-throw-literal": 0,
     // disallow unmodified loop conditions
@@ -133,13 +133,13 @@ module.exports = {
     // disallow specified warning terms in comments
     "no-warning-comments": 0,
     // disallow with statements
-    "no-with": 0,
+    "no-with": 2,
     // require using Error objects as Promise rejection reasons
     "prefer-promise-reject-errors": 0,
     // enforce the consistent use of the radix argument when using parseInt()
     radix: 2,
     // disallow async functions which have no await expression
-    "require-await": 0,
+    "require-await": 2,
     // enforce the use of u flag on RegExp
     "require-unicode-regexp": 0,
     // require var declarations be placed at the top of their containing scope
