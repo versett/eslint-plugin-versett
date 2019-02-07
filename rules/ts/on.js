@@ -30,7 +30,7 @@ module.exports = {
     // Require explicit accessibility modifiers on class properties and methods
     "@typescript-eslint/explicit-member-accessibility": 2,
     // Enforces naming of generic type variables
-    "@typescript-eslint/generic-type-naming": [2, "^^[A-Z][a-zA-Z0-9]+Type$"],
+    "@typescript-eslint/generic-type-naming": [2, "^[A-Z][a-zA-Z0-9]+Type$"],
     // Enforce consistent indentation
     "@typescript-eslint/indent": 0,
     // Require that interface names be prefixed with I
