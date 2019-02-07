@@ -1,7 +1,10 @@
 "use strict";
 
 module.exports = {
-  parser: "typescript-eslint-parser",
+  parser: "@typescript-eslint/parser",
+  parserOptions: {
+    project: "./tsconfig.json"
+  },
   plugins: ["import"],
   // our custome config must have a higher priority to other config, so change the order of extended configs with caution
   extends: [
@@ -9,7 +12,8 @@ module.exports = {
     "plugin:import/warnings",
     "plugin:import/typescript",
     require.resolve("../configurations/eslint-all"),
-    require.resolve("../rules/jest/on")
+    require.resolve("../rules/jest/on"),
+    require.resolve("../rules/ts/on")
   ],
   env: {
     jest: true,
@@ -34,9 +38,6 @@ module.exports = {
       }
     }
   ],
-  parserOptions: {
-    sourceType: "module"
-  },
   settings: {
     "import/resolver": {
       node: {
