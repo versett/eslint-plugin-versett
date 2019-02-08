@@ -4,9 +4,7 @@
   "description": "A tool for linting projects with different techs",
   "main": "index.js",
   "scripts": {
-    "precommit": "versett-devtools precommit",
-    "preparecommitmsg": "versett-devtools preparecommitmsg ${GIT_PARAMS}",
-    "release": "yarn && versett-devtools release --npm-publish",
+    "release": "yarn && versett-scripts release --npm-publish",
     "test": "jest",
     "test:ci": "yarn check --integrity && jest"
   },
@@ -21,14 +19,8 @@
   },
   "homepage": "https://github.com/versett/eslint-plugin-versett#readme",
   "devDependencies": {
-    "@versett/versett-devtools": "^1.9.0",
+    "@versett/versett-scripts": "^0.5.0",
     "jest": "^23.6.0"
-  },
-  "lint-staged": {
-    "*.{js,json,css}": [
-      "prettier --write",
-      "git add"
-    ]
   },
   "release": {
     "getLastRelease": "last-release-git"
@@ -38,5 +30,25 @@
     "eslint": ">= 5.6.0 < 6",
     "eslint-plugin-import": ">= 2.14.0",
     "eslint-plugin-jest": ">= 22.1.3"
-  }
+  },
+  "engines": {
+    "node": "10.15.0",
+    "npm": "6.4.1",
+    "yarn": "1.13.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "versett-scripts commitmsg ${HUSKY_GIT_PARAMS}",
+      "pre-commit": "versett-scripts precommit",
+      "prepare-commit-msg": "versett-scripts preparecommitmsg ${HUSKY_GIT_PARAMS}",
+      "pre-push": "versett-scripts prepush"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md,ts,tsx}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {}
 }
