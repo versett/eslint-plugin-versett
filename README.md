@@ -120,7 +120,7 @@ Versioning is done automatically by `versett-devtools` when a branch is merged w
 
 ## Need help?
 
-Post on the #developers channel on Slack or create an issue.
+Post on the *#internal-tools* channel on Slack or create an issue.
 
 ## Authors
 
