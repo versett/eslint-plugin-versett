@@ -121,7 +121,7 @@ module.exports = {
     // disallow unnecessary calls to .call() and .apply()
     "no-useless-call": 2,
     // disallow unnecessary catch clauses
-    "no-useless-catch": 2,
+    "no-useless-catch": 0,
     // disallow unnecessary concatenation of literals or template literals
     "no-useless-concat": 2,
     // disallow redundant return statements
