@@ -11,14 +11,14 @@ module.exports = {
     "plugin:jsx-a11y/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
-    "plugin:import/typescript",
     require.resolve("../configurations/eslint-all"),
     require.resolve("../rules/react/on"),
     require.resolve("../rules/jest/on"),
     require.resolve("../rules/ts/on")
   ],
   env: {
-    jest: true
+    jest: true,
+    es6: true
   },
   globals: {
     global: true,
@@ -51,6 +51,5 @@ module.exports = {
     react: {
       version: "detect"
     }
-  },
-  rules: {}
+  }
 };
