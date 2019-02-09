@@ -51,6 +51,5 @@ module.exports = {
     react: {
       version: "detect"
     }
-  },
-  rules: {}
+  }
 };

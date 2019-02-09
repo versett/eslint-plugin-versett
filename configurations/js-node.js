@@ -44,6 +44,5 @@ module.exports = {
         extensions: [".js"]
       }
     }
-  },
-  rules: {}
+  }
 };
