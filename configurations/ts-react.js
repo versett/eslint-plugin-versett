@@ -8,6 +8,8 @@ module.exports = {
   plugins: ["jsx-a11y", "import"],
   // our custome config must have a higher priority to other config, so change the order of extended configs with caution
   extends: [
+    "prettier",
+    "prettier/@typescript-eslint",
     "plugin:jsx-a11y/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",

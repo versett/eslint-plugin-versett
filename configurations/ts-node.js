@@ -8,6 +8,8 @@ module.exports = {
   plugins: ["import"],
   // our custome config must have a higher priority to other config, so change the order of extended configs with caution
   extends: [
+    "prettier",
+    "prettier/@typescript-eslint",
     "plugin:import/errors",
     "plugin:import/warnings",
     require.resolve("../configurations/eslint-all"),
