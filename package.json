@@ -45,5 +45,10 @@
       "git add"
     ]
   },
-  "dependencies": {}
+  "dependencies": {},
+  "engines": {
+    "node": ">= 10",
+    "npm": ">= 5.6.0",
+    "yarn": "1.12.1"
+  }
 }
