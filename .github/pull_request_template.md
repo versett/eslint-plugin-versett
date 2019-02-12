@@ -24,3 +24,4 @@ if your PR affects areas outside of those described in the original issue, list 
 - [ ] I have tested this PR
 - [ ] I have made at least one semantic commit to my PR
 - [ ] I have connected this pull request with an existing issue on Zenhub
+- [ ] The issue number is included in my PR title
