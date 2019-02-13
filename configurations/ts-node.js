@@ -5,10 +5,10 @@ module.exports = {
   parserOptions: {
     project: "./tsconfig.json"
   },
-  plugins: ["import"],
+  plugins: ["import", "prettier"],
   // our custome config must have a higher priority to other config, so change the order of extended configs with caution
   extends: [
-    "prettier",
+    "plugin:prettier/recommended",
     "prettier/@typescript-eslint",
     "plugin:import/errors",
     "plugin:import/warnings",

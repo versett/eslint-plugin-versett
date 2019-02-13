@@ -2,11 +2,10 @@
 
 module.exports = {
   parser: "babel-eslint",
-  plugins: ["jsx-a11y", "import"],
+  plugins: ["jsx-a11y", "import", "prettier"],
   // our custome config must have a higher priority to other config, so change the order of extended configs with caution
   extends: [
-    "prettier",
-    "prettier/react",
+    "plugin:prettier/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",

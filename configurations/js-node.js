@@ -2,10 +2,10 @@
 
 module.exports = {
   parser: "babel-eslint",
-  plugins: ["import"],
+  plugins: ["import", "prettier"],
   // our custome config must have a higher priority to other config, so change the order of extended configs with caution
   extends: [
-    "prettier",
+    "plugin:prettier/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
     require.resolve("../configurations/eslint-all"),
