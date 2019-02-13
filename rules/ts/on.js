@@ -12,7 +12,6 @@ module.exports = {
       2,
       {
         types: {
-          Array: null,
           Object: "Use {} instead",
           String: {
             message: "Use string instead",
