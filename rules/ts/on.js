@@ -86,7 +86,7 @@ module.exports = {
     // Disallows the use of require statements except in import statements
     "@typescript-eslint/no-var-requires": 2,
     // Prefer an interface declaration over a type literal (type T = { ... })
-    "@typescript-eslint/prefer-interface": 2,
+    "@typescript-eslint/prefer-interface": 0,
     // Require the use of the namespace keyword instead of the module keyword to declare custom TypeScript modules
     "@typescript-eslint/prefer-namespace-keyword": 2,
     // Requires any function or method that returns a Promise to be marked async
