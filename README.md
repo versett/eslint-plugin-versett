@@ -27,13 +27,13 @@ You must be logged in to you Versett npm account first using `npm login`.
 You have to install the following peer dependencies directly in your project for now by this command:
 
 ```
-yarn add --dev eslint babel-eslint eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-import eslint-plugin-import
+yarn add --dev eslint babel-eslint eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-import eslint-config-prettier eslint-plugin-prettier
 ```
 
 or
 
 ```
-npm install --save-dev eslint babel-eslint eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-import eslint-plugin-import
+npm install --save-dev eslint babel-eslint eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-import eslint-config-prettier eslint-plugin-prettier
 ```
 
 This command will no longer be needed after the issue with `eslint shareable config plugins` is resolved. You can refer to this [RFC](https://github.com/eslint/rfcs/pull/7) for more information.
