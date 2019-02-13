@@ -25,7 +25,7 @@ module.exports = {
     // Require PascalCased class and interface names
     "@typescript-eslint/class-name-casing": 2,
     // Require explicit return types on functions and class methods
-    "@typescript-eslint/explicit-function-return-type": 2,
+    "@typescript-eslint/explicit-function-return-type": 0,
     // Require explicit accessibility modifiers on class properties and methods
     "@typescript-eslint/explicit-member-accessibility": 2,
     // Enforces naming of generic type variables
