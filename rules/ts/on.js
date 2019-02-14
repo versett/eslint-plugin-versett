@@ -12,7 +12,6 @@ module.exports = {
       2,
       {
         types: {
-          Array: null,
           Object: "Use {} instead",
           String: {
             message: "Use string instead",
@@ -26,7 +25,7 @@ module.exports = {
     // Require PascalCased class and interface names
     "@typescript-eslint/class-name-casing": 2,
     // Require explicit return types on functions and class methods
-    "@typescript-eslint/explicit-function-return-type": 2,
+    "@typescript-eslint/explicit-function-return-type": 0,
     // Require explicit accessibility modifiers on class properties and methods
     "@typescript-eslint/explicit-member-accessibility": 2,
     // Enforces naming of generic type variables
@@ -87,7 +86,7 @@ module.exports = {
     // Disallows the use of require statements except in import statements
     "@typescript-eslint/no-var-requires": 2,
     // Prefer an interface declaration over a type literal (type T = { ... })
-    "@typescript-eslint/prefer-interface": 2,
+    "@typescript-eslint/prefer-interface": 0,
     // Require the use of the namespace keyword instead of the module keyword to declare custom TypeScript modules
     "@typescript-eslint/prefer-namespace-keyword": 2,
     // Requires any function or method that returns a Promise to be marked async
