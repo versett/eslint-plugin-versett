@@ -31,17 +31,6 @@ module.exports = {
     clearInterval: true,
     navigator: true
   },
-  overrides: [
-    {
-      files: ["*.spec.js", "*.spec.ts", "*.spec.tsx"],
-      rules: {
-        "no-magic-numbers": 0
-      },
-      env: {
-        jest: true
-      }
-    }
-  ],
   settings: {
     "import/resolver": {
       node: {
@@ -51,5 +40,55 @@ module.exports = {
     react: {
       version: "detect"
     }
-  }
+  },
+  overrides: [
+    {
+      files: ["**/*.ts", "**/*.tsx"],
+      parser: "@typescript-eslint/parser",
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true
+        },
+        useJSXTextNode: true,
+        project: "./tsconfig.json"
+      },
+      rules: {
+        "no-undef": "off",
+        "import/extensions": "off",
+        "import/no-extraneous-dependencies": [
+          "error",
+          { devDependencies: true }
+        ],
+        "jest/lowercase-name": [
+          "error",
+          {
+            ignore: ["describe", "test", "it"]
+          }
+        ],
+        "no-unused-vars": [
+          "off",
+          { vars: "all", args: "after-used", ignoreRestSiblings: false }
+        ],
+        "react/jsx-filename-extension": [1, { extensions: [".tsx", ".jsx"] }],
+        "react/jsx-uses-vars": "none",
+        "react/jsx-fragments": ["disable"],
+        "@typescript-eslint/tslint/config": [
+          "warn",
+          {
+            rulesDirectory: ["tslint-plugin-prettier"],
+            rules: {
+              prettier: [true, { singleQuote: false }]
+            }
+          }
+        ],
+        "jsx-a11y/anchor-is-valid": [
+          "error",
+          {
+            components: ["Link"],
+            specialLink: ["to"]
+          }
+        ]
+      }
+    }
+  ]
 };

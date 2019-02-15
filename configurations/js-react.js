@@ -27,17 +27,6 @@ module.exports = {
     clearInterval: true,
     navigator: true
   },
-  overrides: [
-    {
-      files: ["*.spec.js"],
-      rules: {
-        "no-magic-numbers": 0
-      },
-      env: {
-        jest: true
-      }
-    }
-  ],
   parserOptions: {
     ecmaVersion: 6,
     sourceType: "module"
@@ -51,5 +40,30 @@ module.exports = {
     react: {
       version: "detect"
     }
-  }
+  },
+  overrides: [
+    {
+      rules: {
+        "no-undef": "off",
+        "import/extensions": "off",
+        "import/no-extraneous-dependencies": [
+          "error",
+          { devDependencies: true }
+        ],
+        "jest/lowercase-name": [
+          "error",
+          {
+            ignore: ["describe", "test", "it"]
+          }
+        ],
+        "no-unused-vars": [
+          "off",
+          { vars: "all", args: "after-used", ignoreRestSiblings: false }
+        ],
+        "react/jsx-filename-extension": [1, { extensions: [".jsx"] }],
+        "react/jsx-uses-vars": "none",
+        "react/jsx-fragments": ["disable"]
+      }
+    }
+  ]
 };
