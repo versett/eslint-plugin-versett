@@ -13,19 +13,23 @@ You can find more info on eslint [here](https://eslint.org/).
 ```
 yarn add --dev @versett/eslint-plugin-versett
 ```
+
 or
+
 ```
 npm install --save-dev @versett/eslint-plugin-versett
 ```
-You must be logged in to you Versett npm account first using `npm login`.
 
+You must be logged in to you Versett npm account first using `npm login`.
 
 #### Peer Dependecies
 
 You have to install the following peer dependencies directly in your project for now by this command:
+
 ```
-yarn add --dev eslint babel-eslint eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-import
+yarn add --dev eslint babel-eslint eslint-plugin-jest eslint-plugin-import
 ```
+
 This command will no longer be needed after the issue with `eslint shareable config plugins` is resolved. You can refer to this [RFC](https://github.com/eslint/rfcs/pull/7) for more information.
 
 ##### React Project Peer Dependencies
@@ -38,19 +42,21 @@ If you are using React, you need to install the following dependencies as well:
 
 If you are using Typescript, you need to install the following dependencies as well:  
 `yarn add --dev @typescript-eslint/parser @typescript-eslint/eslint-plugin`  
-(or `npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin`)  
+(or `npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin`)
 
-**Notes:** 
-- It is important that you use the same version number for `@typescript-eslint/parser` and  `@typescript-eslint/eslint-plugin`.
+**Notes:**
+
+- It is important that you use the same version number for `@typescript-eslint/parser` and `@typescript-eslint/eslint-plugin`.
 - `tsconfig.json` must be in the root of the project.
 
 ### Configuration
 
 Each Versett configuration helps you start linting a project by just using the preconfigured setup. Currently there are 4 types of configurations available as below:
-* **`plugin:@versett/eslint-plugin-versett/jsNode`** - for Node projects using Javascript
-* **`plugin:@versett/eslint-plugin-versett/jsReact`** - for React projects using Javascript
-* **`plugin:@versett/eslint-plugin-versett/tsNode`** - for Node projects using Typescript
-* **`plugin:@versett/eslint-plugin-versett/tsReact`** - for React projects using Typescript
+
+- **`plugin:@versett/eslint-plugin-versett/jsNode`** - for Node projects using Javascript
+- **`plugin:@versett/eslint-plugin-versett/jsReact`** - for React projects using Javascript
+- **`plugin:@versett/eslint-plugin-versett/tsNode`** - for Node projects using Typescript
+- **`plugin:@versett/eslint-plugin-versett/tsReact`** - for React projects using Typescript
 
 Here is a sample [Eslint config file](https://eslint.org/docs/user-guide/configuring) (`project-directory/.eslintrc.json`):
 
@@ -69,27 +75,32 @@ We strongly recommend against overriding the `rules` configured by this plugin. 
 
 ### Running
 
-Add the following script to your `package.json` and then run it using `yarn lint` (or `npm run lint`):  
+Add the following script to your `package.json` and then run it using `yarn lint` (or `npm run lint`):
+
 ```json
 "lint": "eslint src --ext .js,.tsx"
-```  
+```
 
 (you can change the `--ext` flag to the file extensions you use in your project)
-
 
 ## Development
 
 To get started on development run these commands:
+
 ```
 nvm use
 yarn
 ```
+
 For testing purposes you can use `yarn link` (or `npm link`):
+
 ```
 cd eslint-plugin-versett
 yarn link
 ```
+
 then
+
 ```
 cd my-project
 yarn link @versett/eslint-plugin-versett
@@ -101,12 +112,12 @@ After that, a symbolic link is added to `node_modules` of the project directory.
 
 There are multiple eslint plugins we have used which are listed below.
 
-* [react](https://github.com/yannickcr/eslint-plugin-react)
-* [jest](https://github.com/jest-community/eslint-plugin-jest)
-* [import](https://github.com/benmosher/eslint-plugin-import/)
-* [jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y)
-* [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser)
-* [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)
+- [react](https://github.com/yannickcr/eslint-plugin-react)
+- [jest](https://github.com/jest-community/eslint-plugin-jest)
+- [import](https://github.com/benmosher/eslint-plugin-import/)
+- [jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y)
+- [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser)
+- [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)
 
 please refer to their repos for rules and configurations.
 
@@ -120,16 +131,16 @@ Versioning is done automatically by `versett-devtools` when a branch is merged w
 
 ## Need help?
 
-Post on the *#internal-tools* channel on Slack or create an issue.
+Post on the _#internal-tools_ channel on Slack or create an issue.
 
 ## Authors
 
-* **Soroush Karimi**
-* **Mehran Dabestani**
-* **Hanie Gharedaghi**
+- **Soroush Karimi**
+- **Mehran Dabestani**
+- **Hanie Gharedaghi**
 
 See also the list of [contributors](https://github.com/versett/eslint-plugin-versett/contributors) who participated in this project.
 
 ## Acknowledgments
 
-* Thanks to all Versett superheroes!
+- Thanks to all Versett superheroes!
