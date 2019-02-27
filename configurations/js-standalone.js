@@ -27,10 +27,13 @@ module.exports = {
   globals: {
     global: true,
     process: true,
+    document: true,
+    window: true,
     setTimeout: true,
     setInterval: true,
     clearTimeout: true,
-    clearInterval: true
+    clearInterval: true,
+    navigator: true
   },
   overrides: [
     {
