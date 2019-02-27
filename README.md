@@ -63,6 +63,7 @@ Each Versett configuration helps you start linting a project by just using the p
 - **`plugin:@versett/eslint-plugin-versett/jsReact`** - for React projects using Javascript
 - **`plugin:@versett/eslint-plugin-versett/tsNode`** - for Node projects using Typescript
 - **`plugin:@versett/eslint-plugin-versett/tsReact`** - for React projects using Typescript
+- **`plugin:@versett/eslint-plugin-versett/jsStandalone`** - for standalone Javascript projects
 
 Here is a sample [Eslint config file](https://eslint.org/docs/user-guide/configuring) (`project-directory/.eslintrc.json`):
 
