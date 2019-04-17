@@ -35,7 +35,7 @@ module.exports = {
     // Require that interface names be prefixed with I
     "@typescript-eslint/interface-name-prefix": [2, "always"],
     // Require a specific member delimiter style for interfaces and type literals
-    "@typescript-eslint/member-delimiter-style": 0,
+    "@typescript-eslint/member-delimiter-style": 2,
     // Enforces naming conventions for class members by visibility.
     "@typescript-eslint/member-naming": [2, { private: "^_", protected: "^_" }],
     // Require a consistent member declaration order
