@@ -51,6 +51,12 @@ module.exports = {
       env: {
         jest: true
       }
+    },
+    {
+      files: ["*.showroom.js", "*.showroom.ts", "*.showroom.tsx"],
+      env: {
+        node: true
+      }
     }
   ],
   settings: {
