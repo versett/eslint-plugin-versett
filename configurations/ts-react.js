@@ -44,12 +44,13 @@ module.exports = {
   },
   overrides: [
     {
-      files: ["*.spec.js", "*.spec.ts", "*.spec.tsx"],
+      files: ["*.showroom.js", "*.showroom.ts", "*.showroom.tsx", "*.spec.js", "*.spec.ts", "*.spec.tsx"],
       rules: {
         "no-magic-numbers": 0
       },
       env: {
-        jest: true
+        jest: true,
+        node: true
       }
     }
   ],

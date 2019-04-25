@@ -39,12 +39,13 @@ module.exports = {
   },
   overrides: [
     {
-      files: ["*.spec.js"],
+      files: ["*.showroom.js", "*.showroom.ts", "*.showroom.tsx", "*.spec.js"],
       rules: {
         "no-magic-numbers": 0
       },
       env: {
-        jest: true
+        jest: true,
+        node: true
       }
     }
   ],
