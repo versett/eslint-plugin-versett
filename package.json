@@ -6,7 +6,7 @@
   "scripts": {
     "release": "yarn && versett-scripts release --npm-publish",
     "test": "jest",
-    "test:ci": "yarn check --integrity && jest"
+    "test:ci": "yarn check --integrity && jest && versett-scripts test"
   },
   "repository": {
     "type": "git",
