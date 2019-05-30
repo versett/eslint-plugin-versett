@@ -20,7 +20,7 @@
   "homepage": "https://github.com/versett/eslint-plugin-versett#readme",
   "devDependencies": {
     "@versett/versett-scripts": "^0.13.0",
-    "jest": "^23.6.0"
+    "jest": "^24.8.0"
   },
   "release": {
     "getLastRelease": "last-release-git"
