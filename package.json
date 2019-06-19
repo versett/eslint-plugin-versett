@@ -12,8 +12,8 @@
     "type": "git",
     "url": "git+https://github.com/versett/eslint-plugin-versett.git"
   },
-  "author": "",
-  "license": "UNLICENSED",
+  "author": "versett.com",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/versett/eslint-plugin-versett/issues"
   },

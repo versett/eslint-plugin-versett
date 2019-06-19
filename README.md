@@ -130,24 +130,8 @@ please refer to their repos for rules and configurations.
 
 ## Contributing
 
-Please read [this doc](https://versett.quip.com/zyEcAZ0ZosJn/How-to-Contribute-Code) for details on our code of conduct, and the process for submitting pull requests.
-
-## Versioning
-
-Versioning is done automatically by `versett-devtools` when a branch is merged with master and our CI/CD runs.
+Please read the [contributing guide](./CONTRIBUTING.md) for details on our process for submitting pull requests.
 
 ## Need help?
 
-Post on the _#internal-tools_ channel on Slack or create an issue.
-
-## Authors
-
-- **Soroush Karimi**
-- **Mehran Dabestani**
-- **Hanie Gharedaghi**
-
-See also the list of [contributors](https://github.com/versett/eslint-plugin-versett/contributors) who participated in this project.
-
-## Acknowledgments
-
-- Thanks to all Versett superheroes!
+Open an issue, we're happy to chat!
