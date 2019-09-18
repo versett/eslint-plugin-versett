@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = {
-  plugins: ["react", "jsx-a11y"],
+  plugins: ["react", "jsx-a11y", "react-hooks"],
   rules: {
     // enforces consistent naming for boolean props
     // it must start with "is" or "has" like "isEnabled" or "hasCondition"
@@ -166,6 +166,10 @@ module.exports = {
     "react/jsx-uses-vars": 2,
     // prevent missing parentheses around multilines JSX (fixable)
     "react/jsx-wrap-multilines": 0,
+    // Checks rules of Hooks
+    "react-hooks/rules-of-hooks": 2,
+    // Checks effect dependencies
+    "react-hooks/exhaustive-deps": 2,
     // enforce that a label tag has a text label and an associated control.
     "jsx-a11y/label-has-associated-control": 2,
     // enforce label tags have associated control
