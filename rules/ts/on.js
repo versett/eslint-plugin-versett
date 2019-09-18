@@ -6,7 +6,7 @@ module.exports = {
     // Require that member overloads be consecutive
     "@typescript-eslint/adjacent-overload-signatures": 2,
     // Requires using either T[] or Array<T> for arrays
-    "@typescript-eslint/array-type": [2, "generic"],
+    "@typescript-eslint/array-type": [2, { default: "generic" }],
     // Enforces that types will not to be used
     "@typescript-eslint/ban-types": [
       2,
@@ -24,6 +24,12 @@ module.exports = {
     "@typescript-eslint/camelcase": 2,
     // Require PascalCased class and interface names
     "@typescript-eslint/class-name-casing": 2,
+    // Enforces the use of as Type assertions instead of <Type> assertions
+    // Forbids an object literal to appear in a type assertion expression
+    "@typescript-eslint/consistent-type-assertions": [2, {
+      assertionStyle: "as",
+      objectLiteralTypeAssertions: "never"
+    }],
     // Require explicit return types on functions and class methods
     "@typescript-eslint/explicit-function-return-type": 0,
     // Require explicit accessibility modifiers on class properties and methods
@@ -40,8 +46,6 @@ module.exports = {
     "@typescript-eslint/member-naming": [2, { private: "^_", protected: "^_" }],
     // Require a consistent member declaration order
     "@typescript-eslint/member-ordering": 2,
-    // Enforces the use of as Type assertions instead of <Type> assertions
-    "@typescript-eslint/no-angle-bracket-type-assertion": 2,
     // Disallow generic Array constructors
     "@typescript-eslint/no-array-constructor": 2,
     // Disallow the declaration of empty interfaces
@@ -60,8 +64,6 @@ module.exports = {
     "@typescript-eslint/no-namespace": 2,
     // Disallows non-null assertions using the ! postfix operator
     "@typescript-eslint/no-non-null-assertion": 2,
-    // Forbids an object literal to appear in a type assertion expression
-    "@typescript-eslint/no-object-literal-type-assertion": 2,
     // Disallow the use of parameter properties in class constructors
     "@typescript-eslint/no-parameter-properties": 2,
     // Disallows invocation of require()
@@ -69,7 +71,11 @@ module.exports = {
     // Disallow aliasing this
     "@typescript-eslint/no-this-alias": 2,
     // Disallow /// <reference path="" /> comments
-    "@typescript-eslint/no-triple-slash-reference": 2,
+    "@typescript-eslint/triple-slash-reference": [2, {
+      path: "never",
+      types: "never",
+      lib: "never"
+    }],
     // Disallow the use of type aliases
     "@typescript-eslint/no-type-alias": 0,
     // Warns if a type assertion does not change the type of an expression
