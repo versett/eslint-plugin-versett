@@ -44,6 +44,12 @@ module.exports = {
   },
   overrides: [
     {
+      files: ["*.tsx"],
+      rules: {
+        "explicit-member-accessibility": 0
+      },
+    },
+    {
       files: ["*.spec.js", "*.spec.ts", "*.spec.tsx"],
       rules: {
         "no-magic-numbers": 0

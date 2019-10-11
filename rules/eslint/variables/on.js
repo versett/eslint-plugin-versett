@@ -18,8 +18,8 @@ module.exports = {
     "no-undef": 2,
     // disallow initializing variables to undefined
     "no-undef-init": 0,
-    // disallow the use of undefined as an identifier
-    "no-undefined": 2,
+    // allow the use of undefined
+    "no-undefined": 0,
     // disallow unused variables
     "no-unused-vars": [2, { ignoreRestSiblings: true }],
     // disallow the use of variables before they are defined
