@@ -12,8 +12,8 @@ module.exports = {
     "no-compare-neg-zero": 2,
     // disallow assignment operators in conditional statements
     "no-cond-assign": [2, "always"],
-    // disallow the use of console, except for console.error
-    "no-console": [2, { "allow": ["error"] }],
+    // disallow the use of console
+    "no-console": 2,
     // disallow constant expressions in conditions
     "no-constant-condition": [2, { checkLoops: false }],
     // disallow control characters in regular expressions
