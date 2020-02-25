@@ -6,7 +6,7 @@ module.exports = {
     // Require that member overloads be consecutive
     "@typescript-eslint/adjacent-overload-signatures": 2,
     // Requires using either T[] or Array<T> for arrays
-    "@typescript-eslint/array-type": [2, { default: "generic" }],
+    "@typescript-eslint/array-type": [2, { default: "array-simple" }],
     // Enforces that types will not to be used
     "@typescript-eslint/ban-types": [
       2,
