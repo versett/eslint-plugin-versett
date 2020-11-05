@@ -20,32 +20,74 @@ module.exports = {
         }
       }
     ],
-    // Enforce camelCase naming convention
-    "@typescript-eslint/camelcase": 2,
-    // Require PascalCased class and interface names
-    "@typescript-eslint/class-name-casing": 2,
     // Enforces the use of as Type assertions instead of <Type> assertions
     // Forbids an object literal to appear in a type assertion expression
-    "@typescript-eslint/consistent-type-assertions": [2, {
-      assertionStyle: "as",
-      objectLiteralTypeAssertions: "never"
-    }],
+    "@typescript-eslint/consistent-type-assertions": [
+      2,
+      {
+        assertionStyle: "as",
+        objectLiteralTypeAssertions: "never"
+      }
+    ],
     // Require explicit return types on functions and class methods
     "@typescript-eslint/explicit-function-return-type": 0,
     // Require explicit accessibility modifiers on class properties and methods
     "@typescript-eslint/explicit-member-accessibility": 2,
-    // Enforces naming of generic type variables
-    "@typescript-eslint/generic-type-naming": [2, "^[A-Z][a-zA-Z0-9]+Type$"],
     // Enforce consistent indentation
     "@typescript-eslint/indent": 0,
-    // Require that interface names be prefixed with I
-    "@typescript-eslint/interface-name-prefix": [2, "always"],
     // Require a specific member delimiter style for interfaces and type literals
     "@typescript-eslint/member-delimiter-style": 0,
-    // Enforces naming conventions for class members by visibility.
-    "@typescript-eslint/member-naming": [2, { private: "^_", protected: "^_" }],
+
     // Require a consistent member declaration order
     "@typescript-eslint/member-ordering": 2,
+    // Enforces naming conventions for class members by visibility.
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        selector: ["memberLike"],
+        modifiers: ["private", "protected"],
+        format: ["camelCase"],
+        leadingUnderscore: "require"
+      }
+    ],
+    // Require that interface names be prefixed with I
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        selector: "interface",
+        format: ["PascalCase"],
+        custom: {
+          regex: "^I[A-Z]",
+          match: true
+        }
+      }
+    ],
+    // Enforce camelCase naming convention
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        selector: ["function"],
+        format: ["camelCase"],
+        leadingUnderscore: "allow"
+      }
+    ],
+    // Enforces naming of generic type variables
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        selector: "typeParameter",
+        format: ["PascalCase"],
+        suffix: ["Type"]
+      }
+    ],
+    // Require PascalCased class and interface names
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        selector: "class",
+        format: ["PascalCase"]
+      }
+    ],
     // Disallow generic Array constructors
     "@typescript-eslint/no-array-constructor": 2,
     // Disallow the declaration of empty interfaces
@@ -71,11 +113,14 @@ module.exports = {
     // Disallow aliasing this
     "@typescript-eslint/no-this-alias": 2,
     // Disallow /// <reference path="" /> comments
-    "@typescript-eslint/triple-slash-reference": [2, {
-      path: "never",
-      types: "never",
-      lib: "never"
-    }],
+    "@typescript-eslint/triple-slash-reference": [
+      2,
+      {
+        path: "never",
+        types: "never",
+        lib: "never"
+      }
+    ],
     // Disallow the use of type aliases
     "@typescript-eslint/no-type-alias": 0,
     // Warns if a type assertion does not change the type of an expression
