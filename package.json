@@ -20,7 +20,16 @@
   "homepage": "https://github.com/versett/eslint-plugin-versett#readme",
   "devDependencies": {
     "@versett/versett-scripts": "^0.13.0",
-    "jest": "^24.8.0"
+    "jest": "^24.8.0",
+    "@typescript-eslint/parser": "^4.6.1",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^7",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "typescript": "^4.0.5"
   },
   "release": {
     "getLastRelease": "last-release-git"
@@ -48,6 +57,7 @@
       "git add"
     ]
   },
+  "dependencies": {},
   "engines": {
     "node": ">= 10",
     "npm": ">= 5.6.0",
